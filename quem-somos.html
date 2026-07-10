@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça a Concierge Service USA — Andrea Porto, Simone Muraro e Monica Gasparetto, três brasileiras que unem suas experiências para apoiar famílias na mudança para os Estados Unidos.">
+  <title>Quem Somos | Concierge Service USA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* ===== QUEM SOMOS PAGE SPECIFIC STYLES ===== */
+    .about-intro {
+      background: linear-gradient(135deg, var(--color-bg-warm) 0%, var(--color-bg-warm-deep) 100%);
+      padding: 5rem 0;
+    }
+
+    .about-intro-grid {
+      display: grid;
+      grid-template-columns: minmax(320px, 1fr) minmax(320px, 1fr);
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    .about-intro-text h1 {
+      font-family: var(--font-heading);
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+    }
+
+    .about-intro-names {
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: 1.15rem;
+      color: var(--color-gold-dark);
+      margin-bottom: 1.75rem;
+    }
+
+    .about-intro-text p {
+      font-size: 1.02rem;
+      color: var(--color-text-medium);
+      line-height: 1.75;
+      margin-bottom: 1.25rem;
+      max-width: 520px;
+    }
+
+    .about-intro-signature {
+      margin-top: 1.5rem;
+    }
+
+    .about-intro-signature .logo-icon {
+      width: 54px;
+      height: 22px;
+    }
+
+    .about-intro-photo {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .about-intro-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    @media (max-width: 900px) {
+      .about-intro-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-intro-photo {
+        order: -1;
+      }
+
+      .about-intro-text h1 {
+        font-size: 2.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header" id="top">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Concierge Service USA — Página Inicial">
+        <img class="logo-image" src="image/Logo_dourado.svg" alt="Concierge Service USA" loading="eager">
+      </a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="quem-somos.html" class="nav-link" style="color:var(--color-gold-light);">Quem Somos</a>
+        <a href="index.html#servicos" class="nav-link">Nossos Serviços</a>
+        <a href="outros-servicos.html" class="nav-link">Outros Serviços</a>
+        <a href="guide.html" class="nav-link">Guia do Concierge</a>
+        <a href="index.html#equipe" class="nav-link">Saiba com quem contar</a>
+      </nav>
+      <div class="lang-switch">
+        <button class="lang-btn active" data-lang="pt">PT</button>
+        <span class="lang-divider">|</span>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="about-intro">
+      <div class="container">
+        <div class="about-intro-grid">
+          <div class="about-intro-text reveal">
+            <h1 data-i18n="about_title">Quem somos?</h1>
+            <p class="about-intro-names">Andrea Porto | Simone Muraro | Monica Gasparetto</p>
+            <p data-i18n="about_p1">O Concierge Service U.S.A é formado por três mulheres brasileiras do mundo corporativo, que mudaram com suas famílias para os Estados Unidos. Baseadas em suas próprias experiências, perceberam a necessidade de prestar apoio e suporte para outras famílias nesse processo de mudança de país.</p>
+            <p data-i18n="about_p2">Com personalização e acolhimento, assessora todo o processo desde o planejamento pré-imigratório à adaptação aos Estados Unidos.</p>
+            <div class="about-intro-signature">
+              <img class="logo-icon" src="image/logo.svg" alt="Concierge Service USA" loading="lazy">
+            </div>
+          </div>
+          <div class="about-intro-photo reveal">
+            <img src="image/todasJuntas.jpg" alt="Andrea Porto, Simone Muraro e Monica Gasparetto — Equipe Concierge Service USA">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-story" id="historia">
+      <div class="container">
+        <h2 class="section-title reveal" data-i18n="story_title">Conheça nossa história</h2>
+        <div class="story-row reveal">
+          <div class="story-photo"><img src="image/Andrea.jpg" alt="Andrea Porto" loading="lazy"></div>
+          <div class="story-text">
+            <h3>Andrea Porto</h3>
+            <p data-i18n="story_andrea_p1">Andrea Porto é formada em Administração de Empresas e possui mais de 25 anos de experiência na área financeira, com sólida atuação em planejamento de previdência.</p>
+            <p data-i18n="story_andrea_p2">Desde 2015, Andrea expandiu sua expertise para o Design de Interiores, com especialização em organização residencial e funcionalidade dos espaços. É fundadora da Home Identity, empresa dedicada a transformar residências em ambientes harmoniosos, eficientes e personalizados, que refletem o estilo de vida e as necessidades de cada família.</p>
+            <p data-i18n="story_andrea_p3">Ao combinar sua visão estratégica com sensibilidade estética, Andrea oferece uma perspectiva única que integra planejamento, funcionalidade e design. Ela vem apoiando famílias nos Estados Unidos com soluções que simplificam o dia a dia e promovem bem-estar por meio de ambientes cuidadosamente planejados.</p>
+            <div class="story-signature">
+              <img class="logo-icon" src="image/logo.svg" alt="Concierge Service USA" loading="lazy" style="width:60px;height:24px;">
+              <span>Concierge Service <span class="usa">USA</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="story-row story-row--reverse reveal">
+          <div class="story-photo"><img src="image/Monica.jpg" alt="Monica Gasparetto" loading="lazy"></div>
+          <div class="story-text">
+            <h3>Monica Gasparetto</h3>
+            <p data-i18n="story_monica_p1">Monica Rafful Gasparetto é advogada formada no Brasil, com mais de 30 anos de experiência profissional, trazendo uma base sólida em estratégia, orientação e atendimento ao cliente. Atuou como voluntária e funcionária do Condado de Broward e trabalha há aproximadamente oito anos na área educacional, auxiliando famílias na navegação do sistema acadêmico americano.</p>
+            <p data-i18n="story_monica_p2">Nos últimos cinco anos, Monica também expandiu sua atuação como consultora financeira licenciada, apoiando famílias nos Estados Unidos no planejamento acadêmico e financeiro. Sua formação multidisciplinar permite oferecer uma abordagem abrangente e personalizada, ajudando famílias a tomarem decisões seguras alinhadas às prioridades educacionais e aos objetivos financeiros de longo prazo.</p>
+            <p data-i18n="story_monica_p3">Ao integrar conhecimento jurídico, orientação educacional e planejamento financeiro, Monica proporciona uma perspectiva única que capacita famílias a construírem futuros estruturados e seguros nos Estados Unidos.</p>
+            <div class="story-signature">
+              <img class="logo-icon" src="image/logo.svg" alt="Concierge Service USA" loading="lazy" style="width:60px;height:24px;">
+              <span>Concierge Service <span class="usa">USA</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="story-row reveal">
+          <div class="story-photo"><img src="image/Simone.jpg" alt="Simone Muraro" loading="lazy"></div>
+          <div class="story-text">
+            <h3>Simone Muraro</h3>
+            <p data-i18n="story_simone_p1">Simone Muraro é empresária com mais de 30 anos de experiência no Brasil e trajetória internacional em três países. Estabeleceu-se nos Estados Unidos em 2019, passando a atuar de forma estratégica nas áreas de Imigração, Negócios e Mobilidade Internacional.</p>
+            <p data-i18n="story_simone_p2">Dedica-se a assessorar empresas e famílias no planejamento e na execução de sua transição para os Estados Unidos, oferecendo soluções estruturadas, seguras e altamente personalizadas. Simone coordena uma rede qualificada de parceiros em diversas áreas, garantindo suporte completo em todas as etapas do processo de mudança.</p>
+            <p data-i18n="story_simone_p3">Licenciada na área financeira e no mercado imobiliário da Flórida, integra seus conhecimentos técnicos ao conceito de <em>one stop shop</em> por meio do <em>Concierge Service USA</em>, centralizando e simplificando a jornada de seus clientes com eficiência, profissionalismo e excelência.</p>
+              <div class="story-signature">
+              <img class="logo-icon" src="image/logo.svg" alt="Concierge Service USA" loading="lazy" style="width:60px;height:24px;">
+              <span>Concierge Service <span class="usa">USA</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner-cta" id="contato">
+      <div class="container reveal">
+        <h2 data-i18n="cta_title">Não importa em qual fase do processo você está, nós podemos ajudar.</h2>
+        <a href="https://wa.me/17542619448" target="_blank" class="btn-gold" data-i18n="btn_talk">Fale com um Especialista</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="rodape">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-col-logo">
+          <a href="index.html" class="footer-logo">
+            <img class="logo-image" src="image/Logo_dourado.svg" alt="Concierge Service USA" loading="lazy">
+          </a>
+        </div>
+
+        <div>
+          <h5 data-i18n="footer_services">Nossos serviços</h5>
+          <ul>
+            <li><a href="index.html#servicos">Imigração</a></li>
+            <li><a href="index.html#servicos">Home Identity</a></li>
+            <li><a href="index.html#servicos">Personal Organizer</a></li>
+            <li><a href="guide.html">Guia da Concierge</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 data-i18n="footer_links">Navegação</h5>
+          <ul>
+            <li><a href="index.html#inicio">Início</a></li>
+            <li><a href="quem-somos.html">Quem Somos</a></li>
+            <li><a href="index.html#equipe">Saiba com quem contar</a></li>
+            <li><a href="outros-servicos.html">Outros Serviços</a></li>
+            <li><a href="guide.html">Guia da Concierge</a></li>
+            <li><a href="index.html#publicacoes">Publicações</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 data-i18n="footer_contact">Contatos</h5>
+
+          <div class="contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.21 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.12 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21 16h1a2 2 0 0 1-.08.92z" />
+            </svg>
+            <a href="tel:+17542619448"><span>+1 (754) 261-9448</span></a>
+          </div>
+
+          <div class="contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+            </svg>
+            <a href="https://wa.me/17542619448" target="_blank" rel="noopener"><span>WhatsApp</span></a>
+          </div>
+
+          <div class="contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2" /><path d="M22 7l-10 7L2 7" />
+            </svg>
+            <a href="mailto:contato@conciergeserviceusa.com"><span>contato@conciergeserviceusa.com</span></a>
+          </div>
+
+          <div class="social-links">
+            <a href="https://www.instagram.com/conciergeserviceusa?igsh=ZzFvaXZ5OGR4c2s4" class="social-link" aria-label="Instagram" title="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" /><circle cx="12" cy="12" r="5" /><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none" />
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61566010590338&mibextid=wwXIfr&rdid=JvjIIKoU09UHDtzt&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1ZEid6Zvwt%2F%3Fmibextid%3DwwXIfr#" class="social-link" aria-label="Facebook" title="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/company/conciergeserviceusaa/" class="social-link" aria-label="LinkedIn" title="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect x="2" y="9" width="4" height="12" /><circle cx="4" cy="4" r="2" />
+              </svg>
+            </a>
+            <a href="https://www.youtube.com/@conciergeserviceusa" class="social-link" aria-label="YouTube" title="YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" /><polygon points="9.75,15.02 15.5,11.75 9.75,8.48" fill="white" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="footer_copyright">Copyright &copy; Concierge Service USA</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
