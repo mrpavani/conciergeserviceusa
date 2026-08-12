@@ -17,4 +17,7 @@ Thumbs.db
 ehthumbs.db
 .Trash-1000
 
-.doctos/
+# Pastas de desenvolvimento/documentos
+docs/
+scripts/
+doctos/
