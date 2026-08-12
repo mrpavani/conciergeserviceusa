@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Guia do Concierge — Artigos e publicações da Concierge Service USA sobre imigração, educação, moradia e adaptação aos Estados Unidos.">
+  <meta name="description"
+    content="Guia do Concierge — Artigos e publicações da Concierge Service USA sobre imigração, educação, moradia e adaptação aos Estados Unidos.">
   <title>Guia DO Concierge | Concierge Service USA</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <style>
     /* ===== GUIDE PAGE SPECIFIC STYLES ===== */
@@ -18,6 +22,7 @@
       position: relative;
       overflow: hidden;
     }
+
     .guide-hero::before {
       content: '';
       position: absolute;
@@ -26,16 +31,19 @@
       width: 500px;
       height: 500px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(196,163,90,0.08) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(196, 163, 90, 0.08) 0%, transparent 70%);
     }
+
     .guide-hero::after {
       content: '';
       position: absolute;
       bottom: 0;
-      left: 0; right: 0;
+      left: 0;
+      right: 0;
       height: 4px;
       background: linear-gradient(90deg, var(--color-gold-dark), var(--color-gold), var(--color-gold-light), var(--color-gold));
     }
+
     .guide-hero h1 {
       font-family: var(--font-heading);
       font-size: 3rem;
@@ -45,15 +53,17 @@
       position: relative;
       z-index: 1;
     }
+
     .guide-hero p {
       font-size: 1.1rem;
-      color: rgba(255,255,255,0.75);
+      color: rgba(255, 255, 255, 0.75);
       max-width: 560px;
       margin: 0 auto;
       line-height: 1.7;
       position: relative;
       z-index: 1;
     }
+
     .guide-hero .breadcrumb {
       display: flex;
       align-items: center;
@@ -61,12 +71,18 @@
       gap: 0.5rem;
       margin-bottom: 1.5rem;
       font-size: 0.82rem;
-      color: rgba(255,255,255,0.55);
+      color: rgba(255, 255, 255, 0.55);
       position: relative;
       z-index: 1;
     }
-    .guide-hero .breadcrumb a { color: var(--color-gold-light); }
-    .guide-hero .breadcrumb span { color: rgba(255,255,255,0.35); }
+
+    .guide-hero .breadcrumb a {
+      color: var(--color-gold-light);
+    }
+
+    .guide-hero .breadcrumb span {
+      color: rgba(255, 255, 255, 0.35);
+    }
 
     /* Filter bar */
     .guide-filters {
@@ -74,6 +90,7 @@
       background: var(--color-bg-light);
       border-bottom: 1px solid var(--color-border-light);
     }
+
     .guide-filters .container {
       display: flex;
       align-items: center;
@@ -81,6 +98,7 @@
       flex-wrap: wrap;
       padding-bottom: 1.25rem;
     }
+
     .filter-label {
       font-size: 0.8rem;
       font-weight: 600;
@@ -89,6 +107,7 @@
       letter-spacing: 0.1em;
       margin-right: 0.5rem;
     }
+
     .filter-btn {
       font-size: 0.8rem;
       font-weight: 600;
@@ -101,7 +120,9 @@
       transition: var(--transition-fast);
       font-family: var(--font-body);
     }
-    .filter-btn:hover, .filter-btn.active {
+
+    .filter-btn:hover,
+    .filter-btn.active {
       background: #490038;
       color: #fff;
       border-color: #490038;
@@ -112,6 +133,7 @@
       padding: 3rem 0 5rem;
       background: var(--color-bg-light);
     }
+
     .guide-index {
       display: grid;
       grid-template-columns: 1fr;
@@ -127,6 +149,7 @@
       text-align: center;
       margin-bottom: 2rem;
     }
+
     .guide-empty p {
       color: var(--color-text-medium);
       margin-bottom: 1.25rem;
@@ -141,6 +164,7 @@
       overflow: hidden;
       scroll-margin-top: 2rem;
     }
+
     .guide-article-header {
       padding: 2rem 2.5rem 1.5rem;
       border-bottom: 1px solid var(--color-border-light);
@@ -148,6 +172,7 @@
       align-items: flex-start;
       gap: 1.5rem;
     }
+
     .article-number {
       flex-shrink: 0;
       width: 48px;
@@ -162,9 +187,11 @@
       font-size: 1.1rem;
       font-weight: 700;
     }
+
     .article-header-info {
       flex: 1;
     }
+
     .article-category-tag {
       display: inline-block;
       font-size: 0.72rem;
@@ -172,11 +199,12 @@
       letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--color-primary);
-      background: rgba(107,45,91,0.08);
+      background: rgba(107, 45, 91, 0.08);
       padding: 0.2rem 0.6rem;
       border-radius: 20px;
       margin-bottom: 0.5rem;
     }
+
     .article-header-info h2 {
       font-family: var(--font-heading);
       font-size: 1.45rem;
@@ -184,15 +212,18 @@
       color: var(--color-text-dark);
       line-height: 1.35;
     }
+
     .guide-article-body {
       padding: 2rem 2.5rem 2.5rem;
     }
+
     .guide-article-body p {
       font-size: 0.95rem;
       color: var(--color-text-medium);
       line-height: 1.75;
       margin-bottom: 1.25rem;
     }
+
     .guide-article-body h3 {
       font-family: var(--font-heading);
       font-size: 1.15rem;
@@ -202,11 +233,13 @@
       padding-left: 1rem;
       border-left: 3px solid var(--color-gold);
     }
+
     .guide-article-body ul {
       list-style: none;
       margin: 0 0 1.25rem;
       padding: 0;
     }
+
     .guide-article-body ul li {
       font-size: 0.92rem;
       color: var(--color-text-medium);
@@ -214,6 +247,7 @@
       position: relative;
       line-height: 1.6;
     }
+
     .guide-article-body ul li::before {
       content: '◆';
       position: absolute;
@@ -222,6 +256,7 @@
       font-size: 0.45rem;
       top: 0.55rem;
     }
+
     .guide-article-body blockquote {
       font-family: var(--font-heading);
       font-style: italic;
@@ -234,6 +269,7 @@
       margin: 1.25rem 0;
       line-height: 1.65;
     }
+
     .guide-article-body .note-box {
       background: rgba(73, 0, 56, 0.04);
       border: 1px solid rgba(73, 0, 56, 0.15);
@@ -243,6 +279,7 @@
       font-size: 0.9rem;
       color: var(--color-text-medium);
     }
+
     .guide-article-body .note-box strong {
       color: #490038;
     }
@@ -254,6 +291,7 @@
       margin: 1.25rem 0;
       font-size: 0.88rem;
     }
+
     .visa-table th {
       background: #490038;
       color: #fff;
@@ -261,11 +299,13 @@
       text-align: left;
       font-weight: 600;
     }
+
     .visa-table td {
       padding: 0.6rem 1rem;
       border-bottom: 1px solid var(--color-border-light);
       color: var(--color-text-medium);
     }
+
     .visa-table tr:nth-child(even) td {
       background: var(--color-bg-light);
     }
@@ -281,13 +321,17 @@
       margin-top: 0.5rem;
       transition: var(--transition-fast);
     }
-    .article-cta:hover { color: var(--color-gold-dark); }
+
+    .article-cta:hover {
+      color: var(--color-gold-dark);
+    }
 
     /* Back to top */
     .guide-back-top {
       text-align: center;
       padding: 1.5rem 0 0;
     }
+
     .guide-back-top a {
       font-size: 0.85rem;
       color: var(--color-text-light);
@@ -296,16 +340,33 @@
       gap: 0.4rem;
       transition: var(--transition-fast);
     }
-    .guide-back-top a:hover { color: #490038; }
+
+    .guide-back-top a:hover {
+      color: #490038;
+    }
 
     @media (max-width: 768px) {
-      .guide-hero h1 { font-size: 2rem; }
-      .guide-article-header { flex-direction: column; gap: 1rem; padding: 1.5rem; }
-      .guide-article-body { padding: 1.5rem; }
-      .guide-filters .container { padding-bottom: 1rem; }
+      .guide-hero h1 {
+        font-size: 2rem;
+      }
+
+      .guide-article-header {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.5rem;
+      }
+
+      .guide-article-body {
+        padding: 1.5rem;
+      }
+
+      .guide-filters .container {
+        padding-bottom: 1rem;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <header class="header" id="top">
@@ -321,7 +382,8 @@
         <a href="guide.html" class="nav-link" style="color:var(--color-gold-light);">Guia do concierge</a>
       </nav>
       <button class="mobile-menu-btn" aria-label="Abrir menu">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
           <line x1="3" y1="12" x2="21" y2="12"></line>
           <line x1="3" y1="6" x2="21" y2="6"></line>
           <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -346,7 +408,8 @@
           <span>Guia DO Concierge</span>
         </div>
         <h1>Guia DO Concierge</h1>
-        <p>Conhecimento especializado e experiência prática para transformar sua jornada aos EUA em um recomeço seguro, organizado e acolhedor.</p>
+        <p>Conhecimento especializado e experiência prática para transformar sua jornada aos EUA em um recomeço seguro,
+          organizado e acolhedor.</p>
       </div>
     </div>
 
@@ -381,16 +444,31 @@
               </div>
             </div>
             <div class="guide-article-body">
-              <p>Migrar é uma decisão fácil? Sabemos que não, porém, com planejamento pré-imigratório e com suporte no decorrer do processo, sua jornada se tornará leve. É um momento para aproveitar e transformar sonhos em realidade.</p>
-              <p>Nossa empresa, Concierge Service USA, atua justamente como um guia confiável que avalia cada detalhe do processo e ajuda a desenhar o melhor trajeto rumo à sua mudança para os EUA.</p>
-              <p>Iniciamos com o visto imigratório, o que mais se adequa ao seu histórico de vida. Qual é sua formação acadêmica, quantos anos de experiência você possui na área de formação, quais foram suas premiações? Definir qual será sua contribuição e seu propósito para os EUA fará com que seu processo ganhe corpo e o departamento imigratório avalie positivamente o seu caso.</p>
-              <p>Na sequência, a escolha da região onde você vai morar. Esta etapa requer análise do perfil individual e coletivo da família. A região de moradia também depende da escolha da escola de seu filho — será pública ou privada?</p>
+              <p>Migrar é uma decisão fácil? Sabemos que não, porém, com planejamento pré-imigratório e com suporte no
+                decorrer do processo, sua jornada se tornará leve. É um momento para aproveitar e transformar sonhos em
+                realidade.</p>
+              <p>Nossa empresa, Concierge Service USA, atua justamente como um guia confiável que avalia cada detalhe do
+                processo e ajuda a desenhar o melhor trajeto rumo à sua mudança para os EUA.</p>
+              <p>Iniciamos com o visto imigratório, o que mais se adequa ao seu histórico de vida. Qual é sua formação
+                acadêmica, quantos anos de experiência você possui na área de formação, quais foram suas premiações?
+                Definir qual será sua contribuição e seu propósito para os EUA fará com que seu processo ganhe corpo e o
+                departamento imigratório avalie positivamente o seu caso.</p>
+              <p>Na sequência, a escolha da região onde você vai morar. Esta etapa requer análise do perfil individual e
+                coletivo da família. A região de moradia também depende da escolha da escola de seu filho — será pública
+                ou privada?</p>
               <h3>Organização do processo e aplicação de vistos</h3>
-              <p>Uma vez definido o tipo de visto adequado, damos início à preparação da documentação necessária e conduzimos o processo de aplicação com total transparência e estratégia. Nosso papel vai além de preencher formulários: explicamos cada etapa, orientamos quanto às entrevistas consulares, ajudamos na tradução de documentos e acompanhamos a evolução do processo até o resultado final.</p>
+              <p>Uma vez definido o tipo de visto adequado, damos início à preparação da documentação necessária e
+                conduzimos o processo de aplicação com total transparência e estratégia. Nosso papel vai além de
+                preencher formulários: explicamos cada etapa, orientamos quanto às entrevistas consulares, ajudamos na
+                tradução de documentos e acompanhamos a evolução do processo até o resultado final.</p>
               <h3>Apoio após a chegada aos EUA</h3>
-              <p>O apoio do Concierge Service USA continua com sua chegada aos EUA. Serviços fundamentais como abertura de conta bancária, construção do crédito, primeira driver license americana, matrícula de filhos em escolas, indicação de pediatras — estaremos com você nos três primeiros meses de mudança.</p>
+              <p>O apoio do Concierge Service USA continua com sua chegada aos EUA. Serviços fundamentais como abertura
+                de conta bancária, construção do crédito, primeira driver license americana, matrícula de filhos em
+                escolas, indicação de pediatras — estaremos com você nos três primeiros meses de mudança.</p>
               <h3>Seja bem-vindo a essa nova fase</h3>
-              <p>Decidir imigrar para os Estados Unidos é assumir um dos passos mais importantes da vida. Ao contar com a Concierge Service USA, você terá ao seu lado uma equipe comprometida, que entende suas necessidades e trabalha para que cada detalhe da sua mudança seja conduzido da melhor maneira.</p>
+              <p>Decidir imigrar para os Estados Unidos é assumir um dos passos mais importantes da vida. Ao contar com
+                a Concierge Service USA, você terá ao seu lado uma equipe comprometida, que entende suas necessidades e
+                trabalha para que cada detalhe da sua mudança seja conduzido da melhor maneira.</p>
               <a href="index.html#contato" class="article-cta">Fale com um especialista →</a>
             </div>
           </article>
@@ -405,20 +483,34 @@
               </div>
             </div>
             <div class="guide-article-body">
-              <p>Mudar para os Estados Unidos representa um grande passo na vida de qualquer família. Entre os muitos fatores que envolvem esse processo, um dos pontos que mais pesa na decisão é a educação dos filhos. Nos EUA, as escolas públicas estão diretamente vinculadas ao endereço da residência — o local onde a família decide morar determinará as opções de escolas disponíveis.</p>
+              <p>Mudar para os Estados Unidos representa um grande passo na vida de qualquer família. Entre os muitos
+                fatores que envolvem esse processo, um dos pontos que mais pesa na decisão é a educação dos filhos. Nos
+                EUA, as escolas públicas estão diretamente vinculadas ao endereço da residência — o local onde a família
+                decide morar determinará as opções de escolas disponíveis.</p>
               <h3>Entendendo o sistema escolar nos Estados Unidos</h3>
               <ul>
-                <li><strong>Escolas públicas:</strong> gratuitas, financiadas por impostos locais, estaduais e federais. A qualidade pode variar bastante entre distritos.</li>
-                <li><strong>Charter schools:</strong> também gratuitas, mas administradas de forma independente. Algumas oferecem programas inovadores.</li>
-                <li><strong>Escolas privadas:</strong> têm custo elevado, mas podem oferecer currículos diferenciados e turmas menores.</li>
+                <li><strong>Escolas públicas:</strong> gratuitas, financiadas por impostos locais, estaduais e federais.
+                  A qualidade pode variar bastante entre distritos.</li>
+                <li><strong>Charter schools:</strong> também gratuitas, mas administradas de forma independente. Algumas
+                  oferecem programas inovadores.</li>
+                <li><strong>Escolas privadas:</strong> têm custo elevado, mas podem oferecer currículos diferenciados e
+                  turmas menores.</li>
               </ul>
               <h3>O que considerar ao escolher a escola certa</h3>
-              <p><strong>1. Idade dos filhos agora e nos próximos cinco anos —</strong> Nos EUA, as escolas seguem uma sequência: Elementary School (fundamental I), Middle School (fundamental II) e High School (ensino médio). Cada endereço está associado a um conjunto dessas escolas.</p>
-              <p><strong>2. Preferência por regiões específicas —</strong> É importante morar perto do trabalho? Há preferência por áreas mais urbanas ou regiões mais tranquilas?</p>
-              <p><strong>3. Perfil demográfico da região e da escola —</strong> Entender esse cenário é importante para avaliar se a escola estará em sintonia com os valores e a cultura da família.</p>
-              <p><strong>4. Avaliações e rankings escolares —</strong> Plataformas como GreatSchools ou Niche oferecem notas e comentários sobre escolas.</p>
+              <p><strong>1. Idade dos filhos agora e nos próximos cinco anos —</strong> Nos EUA, as escolas seguem uma
+                sequência: Elementary School (fundamental I), Middle School (fundamental II) e High School (ensino
+                médio). Cada endereço está associado a um conjunto dessas escolas.</p>
+              <p><strong>2. Preferência por regiões específicas —</strong> É importante morar perto do trabalho? Há
+                preferência por áreas mais urbanas ou regiões mais tranquilas?</p>
+              <p><strong>3. Perfil demográfico da região e da escola —</strong> Entender esse cenário é importante para
+                avaliar se a escola estará em sintonia com os valores e a cultura da família.</p>
+              <p><strong>4. Avaliações e rankings escolares —</strong> Plataformas como GreatSchools ou Niche oferecem
+                notas e comentários sobre escolas.</p>
               <h3>Como a Concierge Service USA pode ajudar</h3>
-              <p>Nossa missão é tornar esse processo mais leve e seguro para as famílias que estão chegando aos Estados Unidos. Por meio de análises personalizadas, levamos em consideração a idade dos filhos, as preferências por determinadas regiões, o perfil demográfico das áreas e as avaliações de escolas em diferentes plataformas.</p>
+              <p>Nossa missão é tornar esse processo mais leve e seguro para as famílias que estão chegando aos Estados
+                Unidos. Por meio de análises personalizadas, levamos em consideração a idade dos filhos, as preferências
+                por determinadas regiões, o perfil demográfico das áreas e as avaliações de escolas em diferentes
+                plataformas.</p>
               <a href="index.html#contato" class="article-cta">Fale com um especialista →</a>
             </div>
           </article>
@@ -433,16 +525,30 @@
               </div>
             </div>
             <div class="guide-article-body">
-              <p>A educação nos Estados Unidos é obrigatória, normalmente dos 5 aos 16 anos, mas cada estado define suas próprias regras. Na Flórida, toda criança tem sua vaga garantida na escola designada para o endereço de moradia, conhecida como <strong>assigned school</strong>.</p>
+              <p>A educação nos Estados Unidos é obrigatória, normalmente dos 5 aos 16 anos, mas cada estado define suas
+                próprias regras. Na Flórida, toda criança tem sua vaga garantida na escola designada para o endereço de
+                moradia, conhecida como <strong>assigned school</strong>.</p>
               <h3>Assigned school: como funciona na prática</h3>
-              <p>Ao definir o endereço da residência, a criança tem direito automático a uma vaga em determinada escola pública da região. Essa relação direta entre moradia e escola faz com que muitos pais escolham um bairro ou imóvel específico com base na reputação da instituição educacional associada.</p>
-              <div class="note-box"><strong>Importante:</strong> a designação da escola não depende apenas do código postal (ZIP Code). A definição é feita por meio de <strong>boundary maps</strong> — mapas de fronteira educacional criados pelas autoridades locais.</div>
+              <p>Ao definir o endereço da residência, a criança tem direito automático a uma vaga em determinada escola
+                pública da região. Essa relação direta entre moradia e escola faz com que muitos pais escolham um bairro
+                ou imóvel específico com base na reputação da instituição educacional associada.</p>
+              <div class="note-box"><strong>Importante:</strong> a designação da escola não depende apenas do código
+                postal (ZIP Code). A definição é feita por meio de <strong>boundary maps</strong> — mapas de fronteira
+                educacional criados pelas autoridades locais.</div>
               <h3>Boundary maps: linhas invisíveis que fazem diferença</h3>
-              <p>Os boundary maps funcionam como divisões invisíveis dentro de um mesmo bairro ou CEP. Isso significa que dois imóveis localizados a poucas quadras de distância podem estar associados a escolas diferentes.</p>
-              <blockquote>"Ao mudar para um novo endereço, fui até a escola Elementary que ficava a menos de uma milha da minha casa. No entanto, ao chegar lá, fui informada de que aquela instituição não correspondia ao meu boundary map e que minha filha deveria estudar em outra escola, bem mais distante." — Monica Gasparetto</blockquote>
+              <p>Os boundary maps funcionam como divisões invisíveis dentro de um mesmo bairro ou CEP. Isso significa
+                que dois imóveis localizados a poucas quadras de distância podem estar associados a escolas diferentes.
+              </p>
+              <blockquote>"Ao mudar para um novo endereço, fui até a escola Elementary que ficava a menos de uma milha
+                da minha casa. No entanto, ao chegar lá, fui informada de que aquela instituição não correspondia ao meu
+                boundary map e que minha filha deveria estudar em outra escola, bem mais distante." — Monica Gasparetto
+              </blockquote>
               <h3>School Choice: uma alternativa de flexibilidade</h3>
-              <p>Além das assigned schools, muitos condados oferecem programas chamados <strong>School Choice</strong>, que permitem aos pais solicitar vagas em outras escolas públicas fora da sua área de residência. Existem também as chamadas <strong>Magnet Schools</strong>, que oferecem currículos especializados.</p>
-              <blockquote>"Nos EUA, é o endereço da família que define a escola da criança." — Monica Gasparetto</blockquote>
+              <p>Além das assigned schools, muitos condados oferecem programas chamados <strong>School Choice</strong>,
+                que permitem aos pais solicitar vagas em outras escolas públicas fora da sua área de residência. Existem
+                também as chamadas <strong>Magnet Schools</strong>, que oferecem currículos especializados.</p>
+              <blockquote>"Nos EUA, é o endereço da família que define a escola da criança." — Monica Gasparetto
+              </blockquote>
               <a href="index.html#contato" class="article-cta">Fale com um especialista →</a>
             </div>
           </article>
@@ -457,8 +563,12 @@
               </div>
             </div>
             <div class="guide-article-body">
-              <p>Mudar de país é uma decisão assertiva para quem deseja uma experiência internacional para sua família. O verdadeiro encontro com uma nova cultura, música, dança, arte, sistema educacional, geografia, história, política, pessoas e línguas.</p>
-              <p>Somos uma empresa de <em>relocation</em> que auxilia famílias e empresas a se estabelecerem nos EUA — um país descomplicado, cheio de oportunidades e onde regras e leis são claras e realmente respeitadas.</p>
+              <p>Mudar de país é uma decisão assertiva para quem deseja uma experiência internacional para sua família.
+                O verdadeiro encontro com uma nova cultura, música, dança, arte, sistema educacional, geografia,
+                história, política, pessoas e línguas.</p>
+              <p>Somos uma empresa de <em>relocation</em> que auxilia famílias e empresas a se estabelecerem nos EUA —
+                um país descomplicado, cheio de oportunidades e onde regras e leis são claras e realmente respeitadas.
+              </p>
               <h3>O que contempla nossos serviços</h3>
               <ul>
                 <li>Visto de imigração</li>
@@ -468,7 +578,9 @@
                 <li>Matrícula na escola, pediatra, vacinas etc.</li>
               </ul>
               <h3>Assessoria Financeira: equilíbrio e planejamento</h3>
-              <p>Viver nos Estados Unidos envolve também abrir conta bancária e de investimento, entender o sistema de crédito, adaptar-se a um novo modelo tributário. Aqui envolve também serviços de seguro de vida com benefício em vida, proteção ao mortgage, aposentadoria privada, serviços contábeis e fiscais.</p>
+              <p>Viver nos Estados Unidos envolve também abrir conta bancária e de investimento, entender o sistema de
+                crédito, adaptar-se a um novo modelo tributário. Aqui envolve também serviços de seguro de vida com
+                benefício em vida, proteção ao mortgage, aposentadoria privada, serviços contábeis e fiscais.</p>
               <a href="index.html#contato" class="article-cta">Entre em contato →</a>
             </div>
           </article>
@@ -483,12 +595,23 @@
               </div>
             </div>
             <div class="guide-article-body">
-              <p>A função concierge surgiu inicialmente no século XIX, nos hotéis de luxo da França. O significado linguístico é "guardião" ou "zelador de total confiança". Ele era o responsável por facilitar a vida dos hóspedes com reservas, transportes, lazeres e quaisquer outras soluções que necessitassem.</p>
-              <p>Foi com base nesse conceito que criamos a Concierge Service USA. Quando uma família decide migrar para um novo país, ela se depara com inúmeros desafios — alguns previstos, outros completamente inesperados. Afinal, mudar de país vai muito além de uma simples mudança de endereço. É um mergulho em uma nova cultura, uma nova moeda, novas leis, usos e costumes.</p>
+              <p>A função concierge surgiu inicialmente no século XIX, nos hotéis de luxo da França. O significado
+                linguístico é "guardião" ou "zelador de total confiança". Ele era o responsável por facilitar a vida dos
+                hóspedes com reservas, transportes, lazeres e quaisquer outras soluções que necessitassem.</p>
+              <p>Foi com base nesse conceito que criamos a Concierge Service USA. Quando uma família decide migrar para
+                um novo país, ela se depara com inúmeros desafios — alguns previstos, outros completamente inesperados.
+                Afinal, mudar de país vai muito além de uma simples mudança de endereço. É um mergulho em uma nova
+                cultura, uma nova moeda, novas leis, usos e costumes.</p>
               <h3>Recomeçar com Segurança, Acolhimento e Propósito</h3>
-              <p>A presença de um concierge significa economia de tempo, redução de custos, diminuição do estresse e uma maior probabilidade de adaptação bem-sucedida ao novo país. Mas seu impacto vai além do prático: ele devolve ao imigrante a sensação de segurança e acolhimento.</p>
-              <p>Foi dessa experiência de vida que nasceu a Concierge Service USA. Nós três também enfrentamos, em algum momento, os desafios de recomeçar fora do nosso país de origem. Sentimos na pele a insegurança, o desconhecimento e até a solidão de não ter a quem recorrer.</p>
-              <blockquote>Nossa motivação é pessoal: queremos que outras famílias tenham a chance de viver esse processo com menos peso e mais segurança, evitando desgastes desnecessários e acelerando a adaptação.</blockquote>
+              <p>A presença de um concierge significa economia de tempo, redução de custos, diminuição do estresse e uma
+                maior probabilidade de adaptação bem-sucedida ao novo país. Mas seu impacto vai além do prático: ele
+                devolve ao imigrante a sensação de segurança e acolhimento.</p>
+              <p>Foi dessa experiência de vida que nasceu a Concierge Service USA. Nós três também enfrentamos, em algum
+                momento, os desafios de recomeçar fora do nosso país de origem. Sentimos na pele a insegurança, o
+                desconhecimento e até a solidão de não ter a quem recorrer.</p>
+              <blockquote>Nossa motivação é pessoal: queremos que outras famílias tenham a chance de viver esse processo
+                com menos peso e mais segurança, evitando desgastes desnecessários e acelerando a adaptação.
+              </blockquote>
               <a href="index.html#contato" class="article-cta">Fale com um especialista →</a>
             </div>
           </article>
@@ -503,7 +626,9 @@
               </div>
             </div>
             <div class="guide-article-body">
-              <p>A decisão de mudar de país requer planejamento e atenção aos aspectos familiares, emocionais e financeiros. É uma decisão dos pais, mas também dos filhos. Uma reunião familiar ajuda a definir interesses, gostos, pontos em comum e a pesquisar cidades onde todos possam se adaptar bem.</p>
+              <p>A decisão de mudar de país requer planejamento e atenção aos aspectos familiares, emocionais e
+                financeiros. É uma decisão dos pais, mas também dos filhos. Uma reunião familiar ajuda a definir
+                interesses, gostos, pontos em comum e a pesquisar cidades onde todos possam se adaptar bem.</p>
               <h3>O que não pode faltar no planejamento da mudança</h3>
               <ul>
                 <li>Escolha do visto imigratório correto (visto provisório ou permanente/green card)</li>
@@ -512,8 +637,10 @@
                 <li>Escolha da futura casa (aluguel ou compra)</li>
                 <li>Decoração, compra de móveis e organização do lar</li>
               </ul>
-              <p>Antes de tudo, o passo mais importante é a <strong>escolha do visto imigratório correto</strong>. Agendamos reuniões com advogados especializados, garantindo respaldo jurídico ao processo.</p>
-              <blockquote>Decidir imigrar para os Estados Unidos é assumir um dos passos mais importantes da vida. Essa escolha carrega sonhos, planos e expectativas que merecem ser tratados com todo cuidado.</blockquote>
+              <p>Antes de tudo, o passo mais importante é a <strong>escolha do visto imigratório correto</strong>.
+                Agendamos reuniões com advogados especializados, garantindo respaldo jurídico ao processo.</p>
+              <blockquote>Decidir imigrar para os Estados Unidos é assumir um dos passos mais importantes da vida. Essa
+                escolha carrega sonhos, planos e expectativas que merecem ser tratados com todo cuidado.</blockquote>
               <a href="index.html#contato" class="article-cta">Fale com um especialista →</a>
             </div>
           </article>
@@ -528,17 +655,26 @@
               </div>
             </div>
             <div class="guide-article-body">
-              <p>Nos Estados Unidos, organizar a casa é um processo simples, econômico e extremamente funcional. Diferente do Brasil, onde é mais comum contar com mão de obra doméstica frequente, nos Estados Unidos essa realidade praticamente não existe. Isso cria um cenário em que manter a casa limpa e organizada se torna uma necessidade prática — quase um "estilo de vida" americano.</p>
+              <p>Nos Estados Unidos, organizar a casa é um processo simples, econômico e extremamente funcional.
+                Diferente do Brasil, onde é mais comum contar com mão de obra doméstica frequente, nos Estados Unidos
+                essa realidade praticamente não existe. Isso cria um cenário em que manter a casa limpa e organizada se
+                torna uma necessidade prática — quase um "estilo de vida" americano.</p>
               <h3>A cultura americana da organização</h3>
-              <p>A sociedade americana valoriza fortemente a funcionalidade e o aproveitamento inteligente dos espaços. Em lojas como Walmart, Target ou HomeGoods, é possível encontrar uma infinidade de produtos voltados exclusivamente para a organização: caixas transparentes, divisórias de gaveta, prateleiras móveis, organizadores de closet.</p>
+              <p>A sociedade americana valoriza fortemente a funcionalidade e o aproveitamento inteligente dos espaços.
+                Em lojas como Walmart, Target ou HomeGoods, é possível encontrar uma infinidade de produtos voltados
+                exclusivamente para a organização: caixas transparentes, divisórias de gaveta, prateleiras móveis,
+                organizadores de closet.</p>
               <h3>Vantagens de contratar uma Personal Organizer nos EUA</h3>
               <ul>
                 <li><strong>Planejamento de espaços:</strong> estudar os ambientes e propor soluções inteligentes</li>
                 <li><strong>Funcionalidade:</strong> criar sistemas de organização fáceis de manter</li>
                 <li><strong>Economia:</strong> evitar compras desnecessárias e aproveitar melhor os recursos</li>
-                <li><strong>Qualidade de vida:</strong> uma casa organizada reduz o estresse e melhora as relações familiares</li>
+                <li><strong>Qualidade de vida:</strong> uma casa organizada reduz o estresse e melhora as relações
+                  familiares</li>
               </ul>
-              <blockquote>"Eu sou Andrea Porto, Personal Organizer aqui nos Estados Unidos, e posso te ajudar nesse processo de adaptação. Se você deseja transformar a sua casa em um ambiente prático, funcional e cheio de harmonia, conte comigo."</blockquote>
+              <blockquote>"Eu sou Andrea Porto, Personal Organizer aqui nos Estados Unidos, e posso te ajudar nesse
+                processo de adaptação. Se você deseja transformar a sua casa em um ambiente prático, funcional e cheio
+                de harmonia, conte comigo."</blockquote>
               <a href="index.html#contato" class="article-cta">Fale com Andrea Porto →</a>
             </div>
           </article>
@@ -553,8 +689,13 @@
               </div>
             </div>
             <div class="guide-article-body">
-              <p>A mudança definitiva para os Estados Unidos é um grande desafio. As razões são muitas: outro país, outra cultura, recomeço de vida, falta inicial de rede de apoio, desconhecimento das leis e da rotina do dia a dia.</p>
-              <p>Há pessoas que conseguem se planejar por meses para essa mudança, mas também há quem não tenha esse tempo, como é o caso de famílias transferidas a trabalho. Já atendi famílias que tiveram apenas 15 dias para migrar e outras que tiveram um ano inteiro para se preparar. Os desafios são diferentes, mas a essência é a mesma.</p>
+              <p>A mudança definitiva para os Estados Unidos é um grande desafio. As razões são muitas: outro país,
+                outra cultura, recomeço de vida, falta inicial de rede de apoio, desconhecimento das leis e da rotina do
+                dia a dia.</p>
+              <p>Há pessoas que conseguem se planejar por meses para essa mudança, mas também há quem não tenha esse
+                tempo, como é o caso de famílias transferidas a trabalho. Já atendi famílias que tiveram apenas 15 dias
+                para migrar e outras que tiveram um ano inteiro para se preparar. Os desafios são diferentes, mas a
+                essência é a mesma.</p>
               <h3>Perguntas mais comuns</h3>
               <ul>
                 <li>Onde morar? Comprar ou alugar um imóvel? Casa, townhouse ou apartamento?</li>
@@ -564,8 +705,11 @@
                 <li>Como organizar os ambientes para que a rotina fique prática?</li>
               </ul>
               <h3>Por que tentar fazer tudo sozinho pode sair mais caro</h3>
-              <p>O grande erro que muitos cometem ao chegar é acreditar que vão dar conta de tudo sozinhos. É possível, mas quase sempre acontece à custa de muitos erros, desgaste, perda de tempo e, inevitavelmente, de dinheiro.</p>
-              <blockquote>"Nós acreditamos no ditado: quem paga mal, paga duas vezes. Nós mesmos já passamos por isso diversas vezes. Hoje, nossa missão é ser essa interface."</blockquote>
+              <p>O grande erro que muitos cometem ao chegar é acreditar que vão dar conta de tudo sozinhos. É possível,
+                mas quase sempre acontece à custa de muitos erros, desgaste, perda de tempo e, inevitavelmente, de
+                dinheiro.</p>
+              <blockquote>"Nós acreditamos no ditado: quem paga mal, paga duas vezes. Nós mesmos já passamos por isso
+                diversas vezes. Hoje, nossa missão é ser essa interface."</blockquote>
               <a href="index.html#contato" class="article-cta">Fale com um especialista →</a>
             </div>
           </article>
@@ -580,21 +724,33 @@
               </div>
             </div>
             <div class="guide-article-body">
-              <p>Para entender o sistema escolar nos Estados Unidos é importante conhecer o período que vai do <strong>Kindergarten</strong> até o último ano do <strong>High School</strong>, conhecido como <strong>K-12</strong>. Durante essa fase, o Estado entende a educação como um direito da criança e uma obrigação dos pais.</p>
+              <p>Para entender o sistema escolar nos Estados Unidos é importante conhecer o período que vai do
+                <strong>Kindergarten</strong> até o último ano do <strong>High School</strong>, conhecido como
+                <strong>K-12</strong>. Durante essa fase, o Estado entende a educação como um direito da criança e uma
+                obrigação dos pais.
+              </p>
               <h3>Estrutura administrativa</h3>
               <ul>
                 <li><strong>Condado (County):</strong> agrupamento de cidades</li>
                 <li><strong>Distrito Escolar (School District):</strong> órgão administrativo autônomo do condado</li>
-                <li><strong>School Boundaries:</strong> subdivisões que determinam a escola designada para cada endereço</li>
+                <li><strong>School Boundaries:</strong> subdivisões que determinam a escola designada para cada endereço
+                </li>
               </ul>
-              <div class="note-box"><strong>Importante:</strong> as fronteiras escolares determinam a escola de um aluno com base no <strong>endereço da residência</strong> e não pelo <strong>ZIP Code (CEP)</strong>. Um mesmo ZIP Code pode abranger diferentes escolas dependendo da linha divisória traçada pelo distrito.</div>
+              <div class="note-box"><strong>Importante:</strong> as fronteiras escolares determinam a escola de um aluno
+                com base no <strong>endereço da residência</strong> e não pelo <strong>ZIP Code (CEP)</strong>. Um mesmo
+                ZIP Code pode abranger diferentes escolas dependendo da linha divisória traçada pelo distrito.</div>
               <h3>Opções além da escola designada</h3>
               <ul>
-                <li><strong>Charter Schools:</strong> híbrido entre escola pública e privada. Vagas preenchidas por sorteio (lottery system)</li>
-                <li><strong>Magnet Schools:</strong> escolas públicas com programas especializados (ciências, artes, línguas)</li>
-                <li><strong>School Choice:</strong> programas que permitem solicitar vagas em escolas fora da área de residência</li>
+                <li><strong>Charter Schools:</strong> híbrido entre escola pública e privada. Vagas preenchidas por
+                  sorteio (lottery system)</li>
+                <li><strong>Magnet Schools:</strong> escolas públicas com programas especializados (ciências, artes,
+                  línguas)</li>
+                <li><strong>School Choice:</strong> programas que permitem solicitar vagas em escolas fora da área de
+                  residência</li>
               </ul>
-              <blockquote>"Ao mudar para um novo endereço, fui até a escola Elementary a menos de uma milha de casa. No entanto, fui informada de que aquela instituição não correspondia ao meu boundary map e que minha filha deveria estudar em outra escola, bem mais distante." — Monica Gasparetto</blockquote>
+              <blockquote>"Ao mudar para um novo endereço, fui até a escola Elementary a menos de uma milha de casa. No
+                entanto, fui informada de que aquela instituição não correspondia ao meu boundary map e que minha filha
+                deveria estudar em outra escola, bem mais distante." — Monica Gasparetto</blockquote>
               <a href="index.html#contato" class="article-cta">Fale com Monica Gasparetto →</a>
             </div>
           </article>
@@ -609,11 +765,16 @@
               </div>
             </div>
             <div class="guide-article-body">
-              <p>A Concierge Service USA aconselha a você que faça com <strong>advogado de imigração</strong> porque experiência não se adquire em curto prazo de tempo. São profissionais que já lidam com as nuances dos processos imigratórios, com pedidos de mais evidências e inclusive com a defesa em caso de negativa.</p>
+              <p>A Concierge Service USA aconselha a você que faça com <strong>advogado de imigração</strong> porque
+                experiência não se adquire em curto prazo de tempo. São profissionais que já lidam com as nuances dos
+                processos imigratórios, com pedidos de mais evidências e inclusive com a defesa em caso de negativa.</p>
               <h3>Como funciona o processo</h3>
-              <p><strong>1. Reunião inicial com o advogado —</strong> O primeiro passo é o agendamento de reunião para entendimento do histórico pessoal, educacional e profissional do aplicante.</p>
-              <p><strong>2. Definição do visto e documentação —</strong> Essas informações serão fundamentais para a definição do visto a ser aplicado. Toda documentação é organizada em um drive.</p>
-              <p><strong>3. Preparação do caso —</strong> Com o preenchimento dos formulários pelos paralegais e advogados de imigração. Esta etapa, na média, demora em torno de <strong>dois meses</strong>.</p>
+              <p><strong>1. Reunião inicial com o advogado —</strong> O primeiro passo é o agendamento de reunião para
+                entendimento do histórico pessoal, educacional e profissional do aplicante.</p>
+              <p><strong>2. Definição do visto e documentação —</strong> Essas informações serão fundamentais para a
+                definição do visto a ser aplicado. Toda documentação é organizada em um drive.</p>
+              <p><strong>3. Preparação do caso —</strong> Com o preenchimento dos formulários pelos paralegais e
+                advogados de imigração. Esta etapa, na média, demora em torno de <strong>dois meses</strong>.</p>
               <h3>Prazos para aprovação</h3>
               <ul>
                 <li><strong>Premium Processing:</strong> custo $2.800, resposta em até 15 dias</li>
@@ -634,21 +795,47 @@
               </div>
             </div>
             <div class="guide-article-body">
-              <p>Se o seu sonho é estudar nos Estados Unidos, o primeiro passo é entender qual tipo de visto de estudante se encaixa no seu perfil. Existem três principais vistos de não imigrante para estudantes internacionais: o <strong>visto F1</strong>, <strong>M1</strong> e o <strong>J1</strong>.</p>
+              <p>Se o seu sonho é estudar nos Estados Unidos, o primeiro passo é entender qual tipo de visto de
+                estudante se encaixa no seu perfil. Existem três principais vistos de não imigrante para estudantes
+                internacionais: o <strong>visto F1</strong>, <strong>M1</strong> e o <strong>J1</strong>.</p>
               <h3>VISTO F1 — Estudante Acadêmico</h3>
-              <p>O visto F1 é o mais comum entre estudantes internacionais. Indicado para cursos de inglês (ESL), universidade, college, programas acadêmicos em tempo integral, High School privado. Permite trabalho no campus no primeiro ano, e depois CPT, OPT e OPT STEM Extension.</p>
+              <p>O visto F1 é o mais comum entre estudantes internacionais. Indicado para cursos de inglês (ESL),
+                universidade, college, programas acadêmicos em tempo integral, High School privado. Permite trabalho no
+                campus no primeiro ano, e depois CPT, OPT e OPT STEM Extension.</p>
               <h3>VISTO M1 — Estudante Técnico ou Profissional</h3>
-              <p>Voltado para cursos técnicos, vocacionais ou profissionalizantes (culinária, mecânica, tecnologia). Não permite trabalho durante o curso. Treinamento prático somente após o término do curso.</p>
+              <p>Voltado para cursos técnicos, vocacionais ou profissionalizantes (culinária, mecânica, tecnologia). Não
+                permite trabalho durante o curso. Treinamento prático somente após o término do curso.</p>
               <h3>VISTO J1 — Intercâmbio Cultural e Estudantil</h3>
-              <p>Aplica-se para: au pair, intercâmbio acadêmico, pesquisador/professor, trainee, intern, médico residente, trabalho e viagem. Controlado por um sponsor aprovado pelo governo dos EUA.</p>
+              <p>Aplica-se para: au pair, intercâmbio acadêmico, pesquisador/professor, trainee, intern, médico
+                residente, trabalho e viagem. Controlado por um sponsor aprovado pelo governo dos EUA.</p>
               <table class="visa-table">
                 <thead>
-                  <tr><th>Visto</th><th>Perfil</th><th>Permite trabalho?</th><th>Duração típica</th></tr>
+                  <tr>
+                    <th>Visto</th>
+                    <th>Perfil</th>
+                    <th>Permite trabalho?</th>
+                    <th>Duração típica</th>
+                  </tr>
                 </thead>
                 <tbody>
-                  <tr><td>F-1</td><td>Acadêmico / Universitário</td><td>Parcialmente (CPT/OPT)</td><td>Duração do curso</td></tr>
-                  <tr><td>M-1</td><td>Técnico / Profissionalizante</td><td>Não (durante o curso)</td><td>1 ano + extensão</td></tr>
-                  <tr><td>J-1</td><td>Intercâmbio Cultural</td><td>Na atividade aprovada</td><td>Variável (1-5 anos)</td></tr>
+                  <tr>
+                    <td>F-1</td>
+                    <td>Acadêmico / Universitário</td>
+                    <td>Parcialmente (CPT/OPT)</td>
+                    <td>Duração do curso</td>
+                  </tr>
+                  <tr>
+                    <td>M-1</td>
+                    <td>Técnico / Profissionalizante</td>
+                    <td>Não (durante o curso)</td>
+                    <td>1 ano + extensão</td>
+                  </tr>
+                  <tr>
+                    <td>J-1</td>
+                    <td>Intercâmbio Cultural</td>
+                    <td>Na atividade aprovada</td>
+                    <td>Variável (1-5 anos)</td>
+                  </tr>
                 </tbody>
               </table>
               <a href="index.html#contato" class="article-cta">Fale com Simone Muraro →</a>
@@ -665,15 +852,24 @@
               </div>
             </div>
             <div class="guide-article-body">
-              <p>Muitos brasileiros escolhem cidades já estabelecidas para morar, avaliando o custo de vida e oportunidades de trabalho. Mais de <strong>1,9 milhão de brasileiros</strong> vivem hoje nos Estados Unidos.</p>
+              <p>Muitos brasileiros escolhem cidades já estabelecidas para morar, avaliando o custo de vida e
+                oportunidades de trabalho. Mais de <strong>1,9 milhão de brasileiros</strong> vivem hoje nos Estados
+                Unidos.</p>
               <h3>Miami</h3>
-              <p>A queridinha dos brasileiros e do mundo. Com seu clima tropical, aeroportos que proporcionam voos diretos, facilidade de comunicação tanto pelo português quanto pelo espanhol. A famosa Brickell promete ser em breve a nova Manhattan. Cidades próximas muito procuradas: Fort Lauderdale, Aventura, Deerfield Beach, Weston.</p>
+              <p>A queridinha dos brasileiros e do mundo. Com seu clima tropical, aeroportos que proporcionam voos
+                diretos, facilidade de comunicação tanto pelo português quanto pelo espanhol. A famosa Brickell promete
+                ser em breve a nova Manhattan. Cidades próximas muito procuradas: Fort Lauderdale, Aventura, Deerfield
+                Beach, Weston.</p>
               <h3>Orlando</h3>
-              <p>Os parques são a grande atração da cidade e o motor do desenvolvimento de Orlando e região. Complexos Disney, Universal, Sea World, além de Natural Springs e o Kennedy Space Center.</p>
+              <p>Os parques são a grande atração da cidade e o motor do desenvolvimento de Orlando e região. Complexos
+                Disney, Universal, Sea World, além de Natural Springs e o Kennedy Space Center.</p>
               <h3>Boston</h3>
-              <p>Boston e seus arredores (Framingham, Everett, Somerville e Cambridge) têm uma das maiores concentrações de brasileiros nos Estados Unidos — estimativas apontam para <strong>110.000 brasileiros</strong> na região em 2022. Boston concentra MIT, Harvard, Boston University e Northeastern.</p>
+              <p>Boston e seus arredores (Framingham, Everett, Somerville e Cambridge) têm uma das maiores concentrações
+                de brasileiros nos Estados Unidos — estimativas apontam para <strong>110.000 brasileiros</strong> na
+                região em 2022. Boston concentra MIT, Harvard, Boston University e Northeastern.</p>
               <h3>Outras cidades</h3>
-              <p><strong>New York</strong>, <strong>Los Angeles</strong> e outras cidades também contam com grande concentração de brasileiros nos EUA.</p>
+              <p><strong>New York</strong>, <strong>Los Angeles</strong> e outras cidades também contam com grande
+                concentração de brasileiros nos EUA.</p>
               <a href="index.html#contato" class="article-cta">Fale com um especialista →</a>
             </div>
           </article>
@@ -688,25 +884,62 @@
               </div>
             </div>
             <div class="guide-article-body">
-              <p>Mudar-se para os Estados Unidos é um sonho compartilhado por milhares de brasileiros. Mas, entre o desejo e a concretização, existe um caminho que exige planejamento, informação e estratégia. O primeiro passo é definir qual será a base legal de entrada e permanência.</p>
+              <p>Mudar-se para os Estados Unidos é um sonho compartilhado por milhares de brasileiros. Mas, entre o
+                desejo e a concretização, existe um caminho que exige planejamento, informação e estratégia. O primeiro
+                passo é definir qual será a base legal de entrada e permanência.</p>
               <h3>Principais tipos de visto</h3>
               <table class="visa-table">
                 <thead>
-                  <tr><th>Categoria</th><th>Visto</th><th>Descrição</th></tr>
+                  <tr>
+                    <th>Categoria</th>
+                    <th>Visto</th>
+                    <th>Descrição</th>
+                  </tr>
                 </thead>
                 <tbody>
-                  <tr><td>Trabalho</td><td>L-1</td><td>Transferência de executivos de multinacionais</td></tr>
-                  <tr><td>Trabalho</td><td>O-1</td><td>Para pessoas com habilidades extraordinárias</td></tr>
-                  <tr><td>Trabalho</td><td>H-1B</td><td>Profissionais qualificados em áreas específicas</td></tr>
-                  <tr><td>Estudo</td><td>F-1</td><td>Acadêmico</td></tr>
-                  <tr><td>Investimento</td><td>EB-5</td><td>Investimento de alto valor com geração de empregos</td></tr>
-                  <tr><td>Temporário</td><td>B-1/B-2</td><td>Turismo ou negócios de curta duração</td></tr>
-                  <tr><td>Permanente</td><td>Green Card</td><td>Residência definitiva</td></tr>
+                  <tr>
+                    <td>Trabalho</td>
+                    <td>L-1</td>
+                    <td>Transferência de executivos de multinacionais</td>
+                  </tr>
+                  <tr>
+                    <td>Trabalho</td>
+                    <td>O-1</td>
+                    <td>Para pessoas com habilidades extraordinárias</td>
+                  </tr>
+                  <tr>
+                    <td>Trabalho</td>
+                    <td>H-1B</td>
+                    <td>Profissionais qualificados em áreas específicas</td>
+                  </tr>
+                  <tr>
+                    <td>Estudo</td>
+                    <td>F-1</td>
+                    <td>Acadêmico</td>
+                  </tr>
+                  <tr>
+                    <td>Investimento</td>
+                    <td>EB-5</td>
+                    <td>Investimento de alto valor com geração de empregos</td>
+                  </tr>
+                  <tr>
+                    <td>Temporário</td>
+                    <td>B-1/B-2</td>
+                    <td>Turismo ou negócios de curta duração</td>
+                  </tr>
+                  <tr>
+                    <td>Permanente</td>
+                    <td>Green Card</td>
+                    <td>Residência definitiva</td>
+                  </tr>
                 </tbody>
               </table>
               <h3>A importância de apoio especializado</h3>
-              <p>A <strong>Concierge Service USA</strong> atua ajudando famílias e profissionais brasileiros em todas as fases, desde a definição de objetivos até a adaptação cultural, logística e educacional nos Estados Unidos.</p>
-              <blockquote>Morar nos Estados Unidos é um projeto de vida que requer clareza de objetivos, conhecimento das opções legais, preparo documental e planejamento financeiro sólido.</blockquote>
+              <p>A <strong>Concierge Service USA</strong> atua ajudando famílias e profissionais brasileiros em todas as
+                fases, desde a definição de objetivos até a adaptação cultural, logística e educacional nos Estados
+                Unidos.</p>
+              <blockquote>Morar nos Estados Unidos é um projeto de vida que requer clareza de objetivos, conhecimento
+                das opções legais, preparo documental e planejamento financeiro sólido.</blockquote>
               <a href="index.html#contato" class="article-cta">Fale com um especialista →</a>
             </div>
           </article>
@@ -722,15 +955,27 @@
             </div>
             <div class="guide-article-body">
               <p><em>Arquitetura emocional como base para acolher identidades, histórias e recomeços.</em></p>
-              <p>Criar ambientes funcionais, confortáveis e inspiradores sempre foi, para ela, mais do que uma questão estética. Desde muito jovem, ao conquistar sua primeira casa, compreendeu que um lar precisa refletir quem vive ali — suas rotinas, afetos e identidade.</p>
-              <blockquote>Um ambiente só é verdadeiramente funcional quando cria conexão emocional com quem o habita.</blockquote>
+              <p>Criar ambientes funcionais, confortáveis e inspiradores sempre foi, para ela, mais do que uma questão
+                estética. Desde muito jovem, ao conquistar sua primeira casa, compreendeu que um lar precisa refletir
+                quem vive ali — suas rotinas, afetos e identidade.</p>
+              <blockquote>Um ambiente só é verdadeiramente funcional quando cria conexão emocional com quem o habita.
+              </blockquote>
               <h3>Home Identity: uma nova dimensão da imigração</h3>
-              <p>Mudar de país não significa apenas trocar de endereço, mas deixar para trás referências invisíveis — cheiros, cores, hábitos e estímulos que moldam quem somos. Foi desse processo que nasceu o <strong>Home Identity</strong> — um serviço que busca resgatar aquilo que é essencial e afetivo, permitindo que o cliente se reconheça no próprio espaço, mesmo em outro país.</p>
+              <p>Mudar de país não significa apenas trocar de endereço, mas deixar para trás referências invisíveis —
+                cheiros, cores, hábitos e estímulos que moldam quem somos. Foi desse processo que nasceu o <strong>Home
+                  Identity</strong> — um serviço que busca resgatar aquilo que é essencial e afetivo, permitindo que o
+                cliente se reconheça no próprio espaço, mesmo em outro país.</p>
               <h3>Monitoramento e organização de mudanças para os EUA</h3>
-              <p>Mais do que transportar bens, mudar exige compreender uma nova cultura e rever expectativas. A vida americana é mais prática, menos sofisticada em costumes, e aprender a simplificar faz parte da adaptação.</p>
+              <p>Mais do que transportar bens, mudar exige compreender uma nova cultura e rever expectativas. A vida
+                americana é mais prática, menos sofisticada em costumes, e aprender a simplificar faz parte da
+                adaptação.</p>
               <h3>A sensibilidade feminina no recomeço</h3>
-              <p>Em momentos de recomeço, é essa capacidade de cuidar, adaptar-se e criar vínculos que transforma casas em lares. A mensagem que permanece é clara: <strong>recomeçar não é fácil para ninguém</strong>. Permitir-se ser ajudada é um ato de inteligência emocional.</p>
-              <blockquote>Quando o ambiente reflete quem a mulher realmente é — suas raízes, valores e momento de vida — ele se torna um ponto de apoio, força e acolhimento. Um espaço que sustenta e lembra, todos os dias, que é possível florescer novamente.</blockquote>
+              <p>Em momentos de recomeço, é essa capacidade de cuidar, adaptar-se e criar vínculos que transforma casas
+                em lares. A mensagem que permanece é clara: <strong>recomeçar não é fácil para ninguém</strong>.
+                Permitir-se ser ajudada é um ato de inteligência emocional.</p>
+              <blockquote>Quando o ambiente reflete quem a mulher realmente é — suas raízes, valores e momento de vida —
+                ele se torna um ponto de apoio, força e acolhimento. Um espaço que sustenta e lembra, todos os dias, que
+                é possível florescer novamente.</blockquote>
               <a href="index.html#contato" class="article-cta">Fale com Andrea Porto →</a>
             </div>
           </article>
@@ -745,48 +990,90 @@
               </div>
             </div>
             <div class="guide-article-body">
-              <p>A internacionalização de negócios para os Estados Unidos é uma estratégia que atrai muitos empresários. Seja para quem busca abrir o mercado de sua empresa brasileira ou para quem deseja construir uma vida nos EUA, compreender a estrutura corporativa é essencial.</p>
-              
+              <p>A internacionalização de negócios para os Estados Unidos é uma estratégia que atrai muitos empresários.
+                Seja para quem busca abrir o mercado de sua empresa brasileira ou para quem deseja construir uma vida
+                nos EUA, compreender a estrutura corporativa é essencial.</p>
+
               <h3>1. Definição de estratégia e estrutura societária</h3>
-              <p>Antes de qualquer passo prático, é fundamental definir o tipo societário mais adequado ao seu negócio. Nos EUA, as estruturas mais comuns para empresas estrangeiras são a LLC (Limited Liability Company) e a Corporation (C-Corp ou S-Corp). A escolha impacta diretamente a tributação, a responsabilidade dos sócios e a capacidade de captar investimentos.</p>
-              <p>Cada estado tem suas próprias regras, custos e vantagens. Delaware é conhecido por seu sistema jurídico empresarial robusto; Flórida atrai pela simplicidade e custo benefício; Texas ganha destaque por não cobrar imposto de renda estadual sobre pessoas físicas.</p>
-              
+              <p>Antes de qualquer passo prático, é fundamental definir o tipo societário mais adequado ao seu negócio.
+                Nos EUA, as estruturas mais comuns para empresas estrangeiras são a LLC (Limited Liability Company) e a
+                Corporation (C-Corp ou S-Corp). A escolha impacta diretamente a tributação, a responsabilidade dos
+                sócios e a capacidade de captar investimentos.</p>
+              <p>Cada estado tem suas próprias regras, custos e vantagens. Delaware é conhecido por seu sistema jurídico
+                empresarial robusto; Flórida atrai pela simplicidade e custo benefício; Texas ganha destaque por não
+                cobrar imposto de renda estadual sobre pessoas físicas.</p>
+
               <h3>2. Registro da empresa e obtenção do EIN</h3>
-              <p>Com a estrutura definida, o próximo passo é registrar a empresa no estado escolhido e obter o EIN (Employer Identification Number) — equivalente ao CNPJ brasileiro. Brasileiros sem Social Security Number podem obter o EIN por meio de um agente autorizado, um processo que exige precisão documental.</p>
-              
+              <p>Com a estrutura definida, o próximo passo é registrar a empresa no estado escolhido e obter o EIN
+                (Employer Identification Number) — equivalente ao CNPJ brasileiro. Brasileiros sem Social Security
+                Number podem obter o EIN por meio de um agente autorizado, um processo que exige precisão documental.
+              </p>
+
               <h3>3. Abertura de conta bancária americana</h3>
-              <p>Sem uma conta bancária nos EUA, a operação simplesmente não acontece. Este é frequentemente um dos maiores gargalos para brasileiros, pois os bancos americanos têm regras rigorosas de compliance, KYC (Know Your Customer) e Patriot Act. Ter o suporte correto desde o início evita atrasos e frustrações.</p>
-              
+              <p>Sem uma conta bancária nos EUA, a operação simplesmente não acontece. Este é frequentemente um dos
+                maiores gargalos para brasileiros, pois os bancos americanos têm regras rigorosas de compliance, KYC
+                (Know Your Customer) e Patriot Act. Ter o suporte correto desde o início evita atrasos e frustrações.
+              </p>
+
               <h3>4. Planejamento tributário e fiscal</h3>
-              <p>O sistema tributário americano é complexo e opera em três esferas — federal, estadual e municipal. Brasileiros precisam entender obrigações como federal tax return, state tax return, sales tax e eventuais tratados contra bitributação. O planejamento tributário bem feito pode representar economia significativa e evitar problemas futuros.</p>
-              
+              <p>O sistema tributário americano é complexo e opera em três esferas — federal, estadual e municipal.
+                Brasileiros precisam entender obrigações como federal tax return, state tax return, sales tax e
+                eventuais tratados contra bitributação. O planejamento tributário bem feito pode representar economia
+                significativa e evitar problemas futuros.</p>
+
               <h3>5. Estratégia de mercado e posicionamento de marca</h3>
-              <p>Entrar no mercado americano exige mais do que registrar uma empresa. É preciso adaptar a mensagem, reposicionar a marca, entender a psicologia do consumidor americano e construir uma estratégia alinhada com a realidade cultural e regulatória local. O que funciona no Brasil nem sempre ressoa com o público americano.</p>
-              
+              <p>Entrar no mercado americano exige mais do que registrar uma empresa. É preciso adaptar a mensagem,
+                reposicionar a marca, entender a psicologia do consumidor americano e construir uma estratégia alinhada
+                com a realidade cultural e regulatória local. O que funciona no Brasil nem sempre ressoa com o público
+                americano.</p>
+
               <h3>6. Questões imigratórias e vistos</h3>
-              <p>Para empresários que pretendem atuar presencialmente nos EUA, a estratégia imigratória precisa caminhar junto com a estratégia de negócios. O visto E-2 (Treaty Investor Visa) é uma das opções mais utilizadas, permitindo que nacionais de países com tratado invistam e dirijam um negócio nos Estados Unidos. É importante notar que o Brasil não possui tratado E-2 direto com os EUA, mas brasileiros que possuem cidadania europeia — especialmente portuguesa — podem se beneficiar dessa via.</p>
-              <p>Outras opções incluem o visto L-1 (transferência intracompanhia) para executivos e funcionários especializados, e o EB-5para investidores com capital substancial. A escolha do visto certo depende do volume de investimento, do modelo de negócio e dos objetivos de longo prazo.</p>
+              <p>Para empresários que pretendem atuar presencialmente nos EUA, a estratégia imigratória precisa caminhar
+                junto com a estratégia de negócios. O visto E-2 (Treaty Investor Visa) é uma das opções mais utilizadas,
+                permitindo que nacionais de países com tratado invistam e dirijam um negócio nos Estados Unidos. É
+                importante notar que o Brasil não possui tratado E-2 direto com os EUA, mas brasileiros que possuem
+                cidadania europeia — especialmente portuguesa — podem se beneficiar dessa via.</p>
+              <p>Outras opções incluem o visto L-1 (transferência intracompanhia) para executivos e funcionários
+                especializados, e o EB-5para investidores com capital substancial. A escolha do visto certo depende do
+                volume de investimento, do modelo de negócio e dos objetivos de longo prazo.</p>
 
               <h3>Erros comuns que custam caro</h3>
               <p>A internacionalização é um terreno fértil para equívocos — muitos deles caros e demorados:</p>
               <ul>
-                <li>Subestimar a complexidade tributária, tratando o sistema americano como uma extensão simplificada do brasileiro</li>
-                <li>Não adaptar a marca e a comunicação ao público local, mantendo abordagens que não ressoam culturalmente</li>
+                <li>Subestimar a complexidade tributária, tratando o sistema americano como uma extensão simplificada do
+                  brasileiro</li>
+                <li>Não adaptar a marca e a comunicação ao público local, mantendo abordagens que não ressoam
+                  culturalmente</li>
                 <li>Escolher o estado errado para registro, sem considerar impacto fiscal e operacional</li>
-                <li>Ignorar compliance regulatório, especialmente em setores como alimentos, saúde e serviços financeiros</li>
-                <li>Fazer tudo sozinho sem orientação local, o que frequentemente resulta em retrabalho e custos extras</li>
-                <li>Misturar finanças pessoais e empresariais, algo que pode comprometer a estrutura societária e gerar passivo fiscal</li>
+                <li>Ignorar compliance regulatório, especialmente em setores como alimentos, saúde e serviços
+                  financeiros</li>
+                <li>Fazer tudo sozinho sem orientação local, o que frequentemente resulta em retrabalho e custos extras
+                </li>
+                <li>Misturar finanças pessoais e empresariais, algo que pode comprometer a estrutura societária e gerar
+                  passivo fiscal</li>
               </ul>
-              
+
               <h3>A diferença entre tentar e acertar</h3>
-              <p>Internacionalizar não é um projeto de fim de semana. É uma decisão estratégica que envolve questões jurídicas, tributárias, operacionais e culturais. Tentar navegar esse processo sem o suporte adequado é como cruzar um oceano sem mapa — possível, mas significativamente mais arriscado.</p>
-              <p>É exatamente nesse ponto que o acompanhamento especializado se torna indispensável. Ter um parceiro que entenda tanto o lado brasileiro quanto o americano, que conheça os gargalos do processo e saiba antecipar problemas, transforma a internacionalização de um desafio intimidador em um plano executável com confiança.</p>
-              
+              <p>Internacionalizar não é um projeto de fim de semana. É uma decisão estratégica que envolve questões
+                jurídicas, tributárias, operacionais e culturais. Tentar navegar esse processo sem o suporte adequado é
+                como cruzar um oceano sem mapa — possível, mas significativamente mais arriscado.</p>
+              <p>É exatamente nesse ponto que o acompanhamento especializado se torna indispensável. Ter um parceiro que
+                entenda tanto o lado brasileiro quanto o americano, que conheça os gargalos do processo e saiba
+                antecipar problemas, transforma a internacionalização de um desafio intimidador em um plano executável
+                com confiança.</p>
+
               <h3>Pronto para levar seu negócio aos Estados Unidos?</h3>
-              <p>A internacionalização não precisa ser uma jornada solitária cheia de incertezas. Com o suporte certo, cada etapa — da estrutura societária à abertura de conta, do planejamento tributário à estratégia de mercado — pode ser percorrida com clareza e segurança.</p>
-              <p>O Concierge Service USA é o seu parceiro completo para expandir negócios brasileiros para os Estados Unidos. Com expertise em estruturação empresarial, orientação tributária, suporte imigratório e estratégia de entrada no mercado americano, o Concierge Service USA oferece o acompanhamento ponta a ponta que você precisa para transformar a ideia de internacionalizar em realidade.</p>
-              <p>Entre em contato com o Concierge Service USA hoje mesmo e dê o primeiro passo concreto rumo à operação global da sua empresa. O mercado americano está esperando — e com a orientação certa, o seu negócio estará pronto para conquistá-lo.</p>
-              
+              <p>A internacionalização não precisa ser uma jornada solitária cheia de incertezas. Com o suporte certo,
+                cada etapa — da estrutura societária à abertura de conta, do planejamento tributário à estratégia de
+                mercado — pode ser percorrida com clareza e segurança.</p>
+              <p>O Concierge Service USA é o seu parceiro completo para expandir negócios brasileiros para os Estados
+                Unidos. Com expertise em estruturação empresarial, orientação tributária, suporte imigratório e
+                estratégia de entrada no mercado americano, o Concierge Service USA oferece o acompanhamento ponta a
+                ponta que você precisa para transformar a ideia de internacionalizar em realidade.</p>
+              <p>Entre em contato com o Concierge Service USA hoje mesmo e dê o primeiro passo concreto rumo à operação
+                global da sua empresa. O mercado americano está esperando — e com a orientação certa, o seu negócio
+                estará pronto para conquistá-lo.</p>
+
               <a href="index.html#contato" class="article-cta">Fale com um especialista →</a>
             </div>
           </article>
@@ -802,70 +1089,128 @@
             </div>
             <div class="guide-article-body">
               <h3>Por que o sistema de seguros americano é diferente de tudo que você conhece</h3>
-              <p>Se há algo que assusta quem chega aos Estados Unidos vindo do Brasil, é a percepção de risco — e o custo — de ficar sem proteção adequada. Nos EUA, o mercado de seguros movimenta mais de US$ 1,7 trilhão anualmente em prêmios, representando cerca de 45% do mercado global. Não é exagero: é a estrutura que sustenta o dia a dia de famílias, empresas e profissionais no país.</p>
-              <p>A diferença fundamental entre Brasil e EUA está na cultura de proteção. Lá, o seguro é parte integrante do planejamento financeiro e empresarial — não um gasto evitável, mas um investimento estratégico. Um atendimento médico sem cobertura pode custar dezenas de milhares de dólares. Um processo trabalhista sem seguro empresarial pode comprometer anos de trabalho. Um falecimento sem seguro de vida pode deixar a família em colapso financeiro.</p>
-              <p>Para o brasileiro que está levando — ou planeja levar — seu negócio ou família para os Estados Unidos, entender o ecossistema de seguros não é opcional. É uma questão de sobrevivência financeira.</p>
+              <p>Se há algo que assusta quem chega aos Estados Unidos vindo do Brasil, é a percepção de risco — e o
+                custo — de ficar sem proteção adequada. Nos EUA, o mercado de seguros movimenta mais de US$ 1,7 trilhão
+                anualmente em prêmios, representando cerca de 45% do mercado global. Não é exagero: é a estrutura que
+                sustenta o dia a dia de famílias, empresas e profissionais no país.</p>
+              <p>A diferença fundamental entre Brasil e EUA está na cultura de proteção. Lá, o seguro é parte integrante
+                do planejamento financeiro e empresarial — não um gasto evitável, mas um investimento estratégico. Um
+                atendimento médico sem cobertura pode custar dezenas de milhares de dólares. Um processo trabalhista sem
+                seguro empresarial pode comprometer anos de trabalho. Um falecimento sem seguro de vida pode deixar a
+                família em colapso financeiro.</p>
+              <p>Para o brasileiro que está levando — ou planeja levar — seu negócio ou família para os Estados Unidos,
+                entender o ecossistema de seguros não é opcional. É uma questão de sobrevivência financeira.</p>
 
               <h3>Os principais tipos de seguro nos EUA</h3>
-              
+
               <h4>1. Seguro de Vida (Life Insurance)</h4>
-              <p>O seguro de vida nos EUA é uma das ferramentas mais poderosas de proteção e planejamento patrimonial. As duas categorias principais são:</p>
+              <p>O seguro de vida nos EUA é uma das ferramentas mais poderosas de proteção e planejamento patrimonial.
+                As duas categorias principais são:</p>
               <ul>
-                <li><strong>Term Life Insurance (Seguro a Termo):</strong> Oferece cobertura por um período determinado — geralmente 10, 20 ou 30 anos. É a opção mais acessível e direta: se o segurado falecer durante o prazo contratado, os beneficiários recebem o valor acordado. Ideal para quem busca máxima proteção pelo menor custo durante os anos de maior responsabilidade financeira.</li>
-                <li><strong>Whole Life Insurance (Seguro Vitalício):</strong> Cobertura permanente que dura por toda a vida, com componente de investimento que acumula valor em dinheiro ao longo do tempo. O prêmio é fixo e a apólice constrói um valor de resgate (cash value) que pode ser utilizado em vida.</li>
-                <li><strong>Universal Life Insurance:</strong> Combina a proteção permanente com flexibilidade nos pagamentos e valor de cobertura. Permite ajustar o prêmio e o benefício de morte conforme as mudanças na situação financeira do segurado.</li>
+                <li><strong>Term Life Insurance (Seguro a Termo):</strong> Oferece cobertura por um período determinado
+                  — geralmente 10, 20 ou 30 anos. É a opção mais acessível e direta: se o segurado falecer durante o
+                  prazo contratado, os beneficiários recebem o valor acordado. Ideal para quem busca máxima proteção
+                  pelo menor custo durante os anos de maior responsabilidade financeira.</li>
+                <li><strong>Whole Life Insurance (Seguro Vitalício):</strong> Cobertura permanente que dura por toda a
+                  vida, com componente de investimento que acumula valor em dinheiro ao longo do tempo. O prêmio é fixo
+                  e a apólice constrói um valor de resgate (cash value) que pode ser utilizado em vida.</li>
+                <li><strong>Universal Life Insurance:</strong> Combina a proteção permanente com flexibilidade nos
+                  pagamentos e valor de cobertura. Permite ajustar o prêmio e o benefício de morte conforme as mudanças
+                  na situação financeira do segurado.</li>
               </ul>
-              <p>Brasileiros podem contratar seguro de vida nos EUA mesmo sem Green Card, desde que possuam vínculos com o país — como empresa constituída, conta bancária, endereço fiscal ou visto válido. As seguradoras avaliam cada caso individualmente, considerando tempo de permanência, propósito e laços financeiros.</p>
+              <p>Brasileiros podem contratar seguro de vida nos EUA mesmo sem Green Card, desde que possuam vínculos com
+                o país — como empresa constituída, conta bancária, endereço fiscal ou visto válido. As seguradoras
+                avaliam cada caso individualmente, considerando tempo de permanência, propósito e laços financeiros.</p>
 
               <h4>2. Benefícios em Vida (Living Benefits)</h4>
-              <p>Esta é uma das inovações mais relevantes do seguro americano e que muitos brasileiros desconhecem. Tradicionalmente, o seguro de vida só paga quando o segurado morre. Os benefícios em vida mudam essa equação.</p>
-              <p>Com riders (cláusulas adicionais) específicos, a apólice permite que o segurado acesse uma parte do benefício de morte enquanto ainda está vivo, caso seja diagnosticado com uma condição grave. Os principais tipos são:</p>
+              <p>Esta é uma das inovações mais relevantes do seguro americano e que muitos brasileiros desconhecem.
+                Tradicionalmente, o seguro de vida só paga quando o segurado morre. Os benefícios em vida mudam essa
+                equação.</p>
+              <p>Com riders (cláusulas adicionais) específicos, a apólice permite que o segurado acesse uma parte do
+                benefício de morte enquanto ainda está vivo, caso seja diagnosticado com uma condição grave. Os
+                principais tipos são:</p>
               <ul>
-                <li><strong>Critical Illness (Doença Crítica):</strong> Permite o adiantamento do benefício em casos de infarto, AVC, câncer e outras condições graves. O dinheiro pode ser usado para tratamento, manutenção da família ou qualquer outra necessidade.</li>
-                <li><strong>Chronic Illness (Doença Crônica):</strong> Se o segurado ficar incapaz de realizar atividades da vida diária (como comer, vestir-se, tomar banho) por um período prolongado, pode acessar os recursos da apólice para custear cuidados.</li>
-                <li><strong>Terminal Illness (Doença Terminal):</strong> Permite o acesso antecipado ao benefício quando há diagnóstico de expectativa de vida inferior a 12 meses.</li>
-                <li><strong>Long-Term Care (Cuidados Prolongados):</strong> Cobertura específica para despesas com enfermagem, assistência domiciliar ou casas de repouso — uma necessidade que pode custar de US$ 50.000 a US$ 100.000+ por ano nos EUA.</li>
+                <li><strong>Critical Illness (Doença Crítica):</strong> Permite o adiantamento do benefício em casos de
+                  infarto, AVC, câncer e outras condições graves. O dinheiro pode ser usado para tratamento, manutenção
+                  da família ou qualquer outra necessidade.</li>
+                <li><strong>Chronic Illness (Doença Crônica):</strong> Se o segurado ficar incapaz de realizar
+                  atividades da vida diária (como comer, vestir-se, tomar banho) por um período prolongado, pode acessar
+                  os recursos da apólice para custear cuidados.</li>
+                <li><strong>Terminal Illness (Doença Terminal):</strong> Permite o acesso antecipado ao benefício quando
+                  há diagnóstico de expectativa de vida inferior a 12 meses.</li>
+                <li><strong>Long-Term Care (Cuidados Prolongados):</strong> Cobertura específica para despesas com
+                  enfermagem, assistência domiciliar ou casas de repouso — uma necessidade que pode custar de US$ 50.000
+                  a US$ 100.000+ por ano nos EUA.</li>
               </ul>
-              <blockquote>A grande vantagem dos benefícios em vida é a flexibilidade: os recursos podem ser usados para qualquer finalidade — tratamento médico, manutenção do negócio, despesas familiares, adaptação da casa. É uma rede de segurança que funciona quando você mais precisa, sem esperar o pior.</blockquote>
-              <p>Para um empresário brasileiro nos EUA, isso significa que mesmo em um cenário de doença grave, sua empresa não precisa parar e sua família não precisa ser desamparada.</p>
+              <blockquote>A grande vantagem dos benefícios em vida é a flexibilidade: os recursos podem ser usados para
+                qualquer finalidade — tratamento médico, manutenção do negócio, despesas familiares, adaptação da casa.
+                É uma rede de segurança que funciona quando você mais precisa, sem esperar o pior.</blockquote>
+              <p>Para um empresário brasileiro nos EUA, isso significa que mesmo em um cenário de doença grave, sua
+                empresa não precisa parar e sua família não precisa ser desamparada.</p>
 
               <h4>3. Seguro Saúde (Health Insurance)</h4>
-              <p>O sistema de saúde americano é predominantemente privado, e os custos sem seguro são proibitivos. Uma simples visita ao pronto-socorro pode ultrapassar US$ 5.000; uma cirurgia de emergência pode passar de US$ 100.000.</p>
+              <p>O sistema de saúde americano é predominantemente privado, e os custos sem seguro são proibitivos. Uma
+                simples visita ao pronto-socorro pode ultrapassar US$ 5.000; uma cirurgia de emergência pode passar de
+                US$ 100.000.</p>
               <p>As principais opções incluem:</p>
               <ul>
-                <li><strong>Obamacare (ACA Marketplace):</strong> Planos disponíveis no mercado governamental, com elegibilidade baseada em renda e status migratório legal. Janela de inscrição geralmente entre novembro e dezembro, salvo eventos especiais (chegada ao país, mudança de status, casamento).</li>
-                <li><strong>Planos Privados:</strong> Disponíveis a qualquer momento, com redes de profissionais mais amplas e menores tempos de espera. Custos variam de US$ 300 a US$ 1.000+ mensais por pessoa, dependendo da cobertura.</li>
-                <li><strong>Planos Temporários:</strong> Ideais para quem está em transição — recém-chegados aguardando residência permanente, por exemplo. Oferecem cobertura básica por períodos limitados.</li>
+                <li><strong>Obamacare (ACA Marketplace):</strong> Planos disponíveis no mercado governamental, com
+                  elegibilidade baseada em renda e status migratório legal. Janela de inscrição geralmente entre
+                  novembro e dezembro, salvo eventos especiais (chegada ao país, mudança de status, casamento).</li>
+                <li><strong>Planos Privados:</strong> Disponíveis a qualquer momento, com redes de profissionais mais
+                  amplas e menores tempos de espera. Custos variam de US$ 300 a US$ 1.000+ mensais por pessoa,
+                  dependendo da cobertura.</li>
+                <li><strong>Planos Temporários:</strong> Ideais para quem está em transição — recém-chegados aguardando
+                  residência permanente, por exemplo. Oferecem cobertura básica por períodos limitados.</li>
               </ul>
 
               <h4>4. Seguro Auto (Auto Insurance)</h4>
-              <p>Obrigatório em 49 dos 50 estados americanos (exceção: New Hampshire), o seguro auto nos EUA é mais do que uma exigência legal — é uma proteção essencial. Dirigir sem cobertura pode resultar em multas severas, suspensão da licença e até apreensão do veículo.</p>
-              <p>As coberturas principais incluem liability (responsabilidade civil), collision (colisão), comprehensive (abrangente) e uninsured/underinsured motorist (contra motoristas sem seguro). Os custos variam significativamente por estado, histórico do condutor e tipo de veículo.</p>
+              <p>Obrigatório em 49 dos 50 estados americanos (exceção: New Hampshire), o seguro auto nos EUA é mais do
+                que uma exigência legal — é uma proteção essencial. Dirigir sem cobertura pode resultar em multas
+                severas, suspensão da licença e até apreensão do veículo.</p>
+              <p>As coberturas principais incluem liability (responsabilidade civil), collision (colisão), comprehensive
+                (abrangente) e uninsured/underinsured motorist (contra motoristas sem seguro). Os custos variam
+                significativamente por estado, histórico do condutor e tipo de veículo.</p>
 
               <h4>5. Seguro Residencial (Homeowners/Renters Insurance)</h4>
-              <p>Seja você proprietário ou inquilino, o seguro residencial protege contra incêndios, roubos, danos por água e responsabilidade civil. Para inquilinos, o renters insurance é surpreentemente acessível — muitas vezes entre US$ 15 e US$ 30 mensais — e cobre pertences pessoais e responsabilidade.</p>
+              <p>Seja você proprietário ou inquilino, o seguro residencial protege contra incêndios, roubos, danos por
+                água e responsabilidade civil. Para inquilinos, o renters insurance é surpreentemente acessível — muitas
+                vezes entre US$ 15 e US$ 30 mensais — e cobre pertences pessoais e responsabilidade.</p>
 
               <h4>6. Seguro Empresarial (Business Insurance)</h4>
               <p>Para o brasileiro que está abrindo uma empresa nos EUA, este é um capítulo fundamental:</p>
               <ul>
-                <li><strong>General Liability Insurance:</strong> Protege contra reclamações de terceiros por danos corporais ou materiais ocorridos nas dependências da empresa.</li>
-                <li><strong>Professional Liability (E&O):</strong> Cobertura para erros ou omissões na prestação de serviços profissionais.</li>
-                <li><strong>Workers' Compensation:</strong> Obrigatório para empresas com funcionários na maioria dos estados. Cobre despesas médicas e indenizações por lesões laborais.</li>
-                <li><strong>Commercial Property Insurance:</strong> Protege o imóvel, equipamentos e estoque da empresa contra incêndios, roubos e danos diversos.</li>
-                <li><strong>Business Owners Policy (BOP):</strong> Combina liability e property em um único pacote, geralmente com custo menor do que contratar separadamente.</li>
-                <li><strong>Cyber Liability Insurance:</strong> Proteção contra violações de dados, ataques cibernéticos e responsabilidades relacionadas à segurança digital — cada vez mais essencial.</li>
+                <li><strong>General Liability Insurance:</strong> Protege contra reclamações de terceiros por danos
+                  corporais ou materiais ocorridos nas dependências da empresa.</li>
+                <li><strong>Professional Liability (E&O):</strong> Cobertura para erros ou omissões na prestação de
+                  serviços profissionais.</li>
+                <li><strong>Workers' Compensation:</strong> Obrigatório para empresas com funcionários na maioria dos
+                  estados. Cobre despesas médicas e indenizações por lesões laborais.</li>
+                <li><strong>Commercial Property Insurance:</strong> Protege o imóvel, equipamentos e estoque da empresa
+                  contra incêndios, roubos e danos diversos.</li>
+                <li><strong>Business Owners Policy (BOP):</strong> Combina liability e property em um único pacote,
+                  geralmente com custo menor do que contratar separadamente.</li>
+                <li><strong>Cyber Liability Insurance:</strong> Proteção contra violações de dados, ataques cibernéticos
+                  e responsabilidades relacionadas à segurança digital — cada vez mais essencial.</li>
               </ul>
 
               <h4>7. Seguro de Invalidez (Disability Insurance)</h4>
-              <p>Se você não pode trabalhar devido a doença ou acidente, o disability insurance substitui uma parte da sua renda — geralmente entre 50% e 70%. Existem duas modalidades:</p>
+              <p>Se você não pode trabalhar devido a doença ou acidente, o disability insurance substitui uma parte da
+                sua renda — geralmente entre 50% e 70%. Existem duas modalidades:</p>
               <ul>
                 <li><strong>Short-Term Disability:</strong> Cobertura de curto prazo, tipicamente de 3 a 6 meses.</li>
-                <li><strong>Long-Term Disability:</strong> Pode durar anos ou até a aposentadoria, dependendo da apólice.</li>
+                <li><strong>Long-Term Disability:</strong> Pode durar anos ou até a aposentadoria, dependendo da
+                  apólice.</li>
               </ul>
-              <p>Para um empresário, essa cobertura é particularmente crítica: se você é o motor do seu negócio, a perda temporária ou permanente da capacidade de trabalho pode significar o fim da empresa sem a devida proteção.</p>
+              <p>Para um empresário, essa cobertura é particularmente crítica: se você é o motor do seu negócio, a perda
+                temporária ou permanente da capacidade de trabalho pode significar o fim da empresa sem a devida
+                proteção.</p>
 
               <h3>A importância do planejamento integrado</h3>
-              <p>A grande armadilha para brasileiros nos EUA é tratar cada seguro isoladamente. Um empresário que protege a empresa mas negligencia o seguro de vida com benefícios em vida deixa sua família vulnerável. Quem contrata health insurance mas ignora disability insurance corre o risco de perder tudo se ficar incapacitado de trabalhar.</p>
+              <p>A grande armadilha para brasileiros nos EUA é tratar cada seguro isoladamente. Um empresário que
+                protege a empresa mas negligencia o seguro de vida com benefícios em vida deixa sua família vulnerável.
+                Quem contrata health insurance mas ignora disability insurance corre o risco de perder tudo se ficar
+                incapacitado de trabalhar.</p>
               <p>O ideal é uma estratégia integrada de proteção que considere:</p>
               <ul>
                 <li>Patrimônio pessoal (life insurance, disability, homeowners)</li>
@@ -873,23 +1218,39 @@
                 <li>Saúde e bem-estar (health insurance, long-term care)</li>
                 <li>Continuidade do negócio (key person insurance, buy-sell agreements)</li>
               </ul>
-              <p>A interseção entre planejamento empresarial, proteção patrimonial e estratégia imigratória é onde muitas empresas brasileiras falham ao se instalar nos EUA — não por falta de competência no negócio, mas por desconhecimento das obrigações e oportunidades do sistema de seguros americano.</p>
+              <p>A interseção entre planejamento empresarial, proteção patrimonial e estratégia imigratória é onde
+                muitas empresas brasileiras falham ao se instalar nos EUA — não por falta de competência no negócio, mas
+                por desconhecimento das obrigações e oportunidades do sistema de seguros americano.</p>
 
               <h3>Não basta contratar — é preciso contratar certo</h3>
-              <p>O mercado de seguros americano oferece centenas de opções, dezenas de seguradoras e milhares de combinações de coberturas e riders. Escolher mal pode significar pagar por coberturas desnecessárias ou, pior, descobrir uma lacuna exatamente quando se precisa dela.</p>
-              <p>Além disso, fatores como status migratório, tipo de visto, estrutura societária da empresa e planejamento tributário influenciam diretamente quais seguros são necessários, quais são obrigatórios e quais oferecem o melhor custo-benefício. O que faz sentido para um portador de Green Card com família estabelecida pode não ser apropriado para um empresário com visto E-2 que ainda está estruturando a operação.</p>
+              <p>O mercado de seguros americano oferece centenas de opções, dezenas de seguradoras e milhares de
+                combinações de coberturas e riders. Escolher mal pode significar pagar por coberturas desnecessárias ou,
+                pior, descobrir uma lacuna exatamente quando se precisa dela.</p>
+              <p>Além disso, fatores como status migratório, tipo de visto, estrutura societária da empresa e
+                planejamento tributário influenciam diretamente quais seguros são necessários, quais são obrigatórios e
+                quais oferecem o melhor custo-benefício. O que faz sentido para um portador de Green Card com família
+                estabelecida pode não ser apropriado para um empresário com visto E-2 que ainda está estruturando a
+                operação.</p>
 
               <h3>Proteja o que você está construindo</h3>
-              <p>Você está investindo tempo, capital e energia para construir algo nos Estados Unidos. Um único imprevisto — uma doença, um acidente, um processo — pode colocar tudo a perder se você não estiver adequadamente protegido.</p>
-              <p>O Concierge Service USA é o seu parceiro para navegar o complexo ecossistema de seguros americanos. Com expertise em proteção patrimonial, seguro de vida com benefícios em vida, cobertura empresarial e planejamento integrado, o Concierge Service USA oferece orientação personalizada para que cada decisão de proteção esteja alinhada com seus objetivos pessoais e empresariais.</p>
-              <p>Não deixe para descobrir a importância de um seguro no momento em que você mais precisa dele. Entre em contato com o Concierge Service USA hoje mesmo e construa uma estratégia de proteção completa, inteligente e sob medida para a sua jornada nos Estados Unidos.</p>
+              <p>Você está investindo tempo, capital e energia para construir algo nos Estados Unidos. Um único
+                imprevisto — uma doença, um acidente, um processo — pode colocar tudo a perder se você não estiver
+                adequadamente protegido.</p>
+              <p>O Concierge Service USA é o seu parceiro para navegar o complexo ecossistema de seguros americanos. Com
+                expertise em proteção patrimonial, seguro de vida com benefícios em vida, cobertura empresarial e
+                planejamento integrado, o Concierge Service USA oferece orientação personalizada para que cada decisão
+                de proteção esteja alinhada com seus objetivos pessoais e empresariais.</p>
+              <p>Não deixe para descobrir a importância de um seguro no momento em que você mais precisa dele. Entre em
+                contato com o Concierge Service USA hoje mesmo e construa uma estratégia de proteção completa,
+                inteligente e sob medida para a sua jornada nos Estados Unidos.</p>
 
               <a href="index.html#contato" class="article-cta">Fale com um especialista →</a>
             </div>
           </article>
 
           <div class="guide-empty" id="guide-empty" hidden>
-            <p>Estamos preparando novos artigos sobre este tema. Fale com a nossa equipe para tirar suas dúvidas agora mesmo.</p>
+            <p>Estamos preparando novos artigos sobre este tema. Fale com a nossa equipe para tirar suas dúvidas agora
+              mesmo.</p>
             <a href="index.html#contato" class="article-cta">Fale com um Especialista →</a>
           </div>
 
@@ -934,17 +1295,39 @@
         <div>
           <h5>Contatos</h5>
           <div class="contact-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.21 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.12 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21 16h1a2 2 0 0 1-.08.92z" /></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.21 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.12 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21 16h1a2 2 0 0 1-.08.92z" />
+            </svg>
             <a href="tel:+17542619448"><span>+1 (754) 261-9448</span></a>
           </div>
           <div class="contact-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="M22 7l-10 7L2 7" /></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="M22 7l-10 7L2 7" />
+            </svg>
             <a href="mailto:contato@conciergeserviceusa.com"><span>contato@conciergeserviceusa.com</span></a>
           </div>
           <div class="social-links">
-            <a href="https://www.instagram.com/conciergeserviceusa?igsh=ZzFvaXZ5OGR4c2s4" class="social-link" aria-label="Instagram" target="_blank" title="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" /><circle cx="12" cy="12" r="5" /><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none" /></svg></a>
-            <a href="https://www.facebook.com/profile.php?id=61566010590338" class="social-link" aria-label="Facebook" target="_blank" title="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg></a>
-            <a href="#" class="social-link" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" /><polygon points="9.75,15.02 15.5,11.75 9.75,8.48" fill="white" /></svg></a>
+            <a href="https://www.instagram.com/conciergeserviceusa?igsh=ZzFvaXZ5OGR4c2s4" class="social-link"
+              aria-label="Instagram" target="_blank" title="Instagram"><svg width="20" height="20" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <circle cx="12" cy="12" r="5" />
+                <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none" />
+              </svg></a>
+            <a href="https://www.facebook.com/profile.php?id=61566010590338" class="social-link" aria-label="Facebook"
+              target="_blank" title="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg></a>
+            <a href="#" class="social-link" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24"
+                fill="currentColor">
+                <path
+                  d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" />
+                <polygon points="9.75,15.02 15.5,11.75 9.75,8.48" fill="white" />
+              </svg></a>
           </div>
         </div>
       </div>
@@ -995,4 +1378,5 @@
     }
   </script>
 </body>
+
 </html>

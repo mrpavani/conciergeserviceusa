@@ -158,27 +158,27 @@ document.addEventListener('DOMContentLoaded', () => {
     // Update buttons
     langBtns.forEach(btn => {
       btn.classList.toggle('active', btn.dataset.lang === lang);
-    
-  /* ==========================================
-     MOBILE MENU TOGGLE
-     ========================================== */
-  const mobileBtn = document.querySelector('.mobile-menu-btn');
-  const mainNav = document.querySelector('.main-nav');
-  if (mobileBtn && mainNav) {
-    mobileBtn.addEventListener('click', () => {
-      mainNav.classList.toggle('active');
-    });
-    
-    // Close menu when a link is clicked
-    const navLinks = document.querySelectorAll('.nav-link');
-    navLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        mainNav.classList.remove('active');
-      });
-    });
-  }
 
-});
+      /* ==========================================
+         MOBILE MENU TOGGLE
+         ========================================== */
+      const mobileBtn = document.querySelector('.mobile-menu-btn');
+      const mainNav = document.querySelector('.main-nav');
+      if (mobileBtn && mainNav) {
+        mobileBtn.addEventListener('click', () => {
+          mainNav.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            mainNav.classList.remove('active');
+          });
+        });
+      }
+
+    });
 
     // Update texts in DOM
     document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -192,7 +192,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const activeMember = document.querySelector('.team-member.active');
     if (activeMember) {
       // Re-trigger click to refresh details in the new language
-      activeMember.click(); 
+      activeMember.click();
     }
   }
 
@@ -239,7 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
             items: [
               'Mapeamento da Regi\u00e3o Escolar',
               'Consultoria para Escolha da Escola',
-              'Vis\u00e3o Geral do K-12 com Foco nos Ciclos Escolares',
+              'Vis\u00e3o Geral do K-12 com foco nos Ciclos Escolares',
               'Prepara\u00e7\u00e3o para Aplica\u00e7\u00e3o \u00e0s Universidades Americanas'
             ]
           },
@@ -427,7 +427,7 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileBtn.addEventListener('click', () => {
       mainNav.classList.toggle('active');
     });
-    
+
     // Close menu when a link is clicked
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
