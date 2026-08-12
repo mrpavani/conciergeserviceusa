@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
       hero_highlight_2: 'Equipe multidisciplinar: imigração, educação e moradia',
       hero_highlight_3: 'Acompanhamento do planejamento à adaptação',
       hero_badge_title: 'Uma equipe, três especialidades',
-      hero_badge_subtitle: 'Uma Equipe, One Stop Shop: Imigração, mudança, organizer, mercado imobiliário, financias e internacionalização de negócios em um só lugar!',
+      hero_badge_subtitle: 'Uma Equipe, One Stop Shop: Imigração, mudança, Interior design, mercado imobiliário, finanças, educação e internacionalização de negócios em um só lugar!',
       services_title: 'O que você está buscando?',
       service_visas: 'Precisa de suporte com vistos e documentação?',
       service_education: 'Busca assessoria para o sistema educacional americano "K-12"?',
@@ -44,9 +44,9 @@ document.addEventListener('DOMContentLoaded', () => {
       btn_talk: 'Fale com um Especialista',
       team_title: 'Saiba com quem e o que você pode contar!',
       team_read_more: 'Leia mais',
-      role_andrea: 'Personal Organizer',
-      role_monica: 'Consultora Educacional',
-      role_simone: 'Especialista Imigratória',
+      role_andrea: 'Interior Designer',
+      role_monica: 'Consultora Educacional e Financeira',
+      role_simone: 'Mobilidade Internacional',
       story_title: 'Conheça nossa história',
       story_andrea_p1: 'Andrea Porto é formada em Administração de Empresas e possui mais de 25 anos de experiência na área financeira, com sólida atuação em planejamento de previdência.',
       story_andrea_p2: 'Desde 2015, Andrea expandiu sua expertise para o Design de Interiores, com especialização em organização residencial e funcionalidade dos espaços. É fundadora da Home Identity, empresa dedicada a transformar residências em ambientes harmoniosos, eficientes e personalizados, que refletem o estilo de vida e as necessidades de cada família.',
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
       story_monica_p2: 'Nos últimos cinco anos, Monica também expandiu sua atuação como consultora financeira licenciada, apoiando famílias nos Estados Unidos no planejamento acadêmico e financeiro. Sua formação multidisciplinar permite oferecer uma abordagem abrangente e personalizada, ajudando famílias a tomarem decisões seguras alinhadas às prioridades educacionais e aos objetivos financeiros de longo prazo.',
       story_monica_p3: 'Ao integrar conhecimento jurídico, orientação educacional e planejamento financeiro, Monica proporciona uma perspectiva única que capacita famílias a construírem futuros estruturados e seguros nos Estados Unidos.',
       story_simone_p1: 'Simone Muraro é empresária com mais de 30 anos de experiência no Brasil e trajetória internacional em três países. Estabeleceu-se nos Estados Unidos em 2019, passando a atuar de forma estratégica nas áreas de Imigração, Negócios e Mobilidade Internacional.',
-      story_simone_p2: 'Dedica-se a assessorar empresas e famílias no planejamento e na execução de sua transição para os Estados Unidos, oferecendo soluções estruturadas, seguras e altamente personalizadas. Simone coordena uma rede qualificada de parceiros em diversas áreas, garantindo suporte completo em todas as etapas do processo de mudança.',
+      story_simone_p2: 'Dedica-se a assessorar empresas e famílias no planejamento e na transição para os Estados Unidos, oferecendo soluções estruturadas, seguras e altamente personalizadas. Simone coordena uma rede qualificada de parceiros em diversas áreas, garantindo suporte completo em todas as etapas do processo de mudança.',
       story_simone_p3: 'Licenciada na área financeira e no mercado imobiliário da Flórida, integra seus conhecimentos técnicos ao conceito de <em>one stop shop</em> por meio do <em>Concierge Service USA</em>, centralizando e simplificando a jornada de seus clientes com eficiência, profissionalismo e excelência.',
       testimonials_title: 'O que dizem sobre nós',
       testimonial_1: '"A Concierge Service USA transformou nossa mudança para os EUA em uma experiência tranquila e segura. Do visto à matrícula escolar, cada passo foi acompanhado de perto."',
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
       hero_highlight_2: 'Multidisciplinary team: immigration, education, and housing',
       hero_highlight_3: 'Guidance from planning through adaptation',
       hero_badge_title: 'One team, three specialties',
-      hero_badge_subtitle: 'Immigration, education, and housing in one place',
+      hero_badge_subtitle: 'One Team, One Stop Shop: Immigration, relocation, Interior design, real estate, finances, education, and business internationalization all in one place!',
       services_title: 'What are you looking for?',
       service_visas: 'Need support with visas and documentation?',
       service_education: 'Looking for guidance with the American "K-12" education system?',
@@ -114,9 +114,9 @@ document.addEventListener('DOMContentLoaded', () => {
       btn_talk: 'Talk to an Expert',
       team_title: 'Know who and what you can count on!',
       team_read_more: 'Read more',
-      role_andrea: 'Personal Organizer',
-      role_monica: 'Educational Consultant',
-      role_simone: 'Immigration Specialist',
+      role_andrea: 'Interior Designer',
+      role_monica: 'Educational & Financial Consultant',
+      role_simone: 'International Mobility',
       story_title: 'Meet our story',
       story_andrea_p1: 'Andrea Porto holds a degree in Business Administration and has more than 25 years of experience in the financial field, with a solid track record in retirement planning.',
       story_andrea_p2: 'Since 2015, Andrea has expanded her expertise into Interior Design, specializing in residential organization and space functionality. She is the founder of Home Identity, a company dedicated to transforming homes into harmonious, efficient, and personalized environments that reflect each family\'s lifestyle and needs.',
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
       story_monica_p2: 'Over the past five years, Monica has also expanded her practice as a licensed financial consultant, supporting families in the United States with academic and financial planning. Her multidisciplinary background allows her to offer a comprehensive, personalized approach, helping families make sound decisions aligned with their educational priorities and long-term financial goals.',
       story_monica_p3: 'By integrating legal knowledge, educational guidance, and financial planning, Monica offers a unique perspective that empowers families to build structured, secure futures in the United States.',
       story_simone_p1: 'Simone Muraro is a businesswoman with more than 30 years of experience in Brazil and an international track record spanning three countries. She settled in the United States in 2019, taking on a strategic role in Immigration, Business, and International Mobility.',
-      story_simone_p2: 'She is dedicated to advising companies and families in planning and carrying out their transition to the United States, offering structured, secure, and highly personalized solutions. Simone coordinates a qualified network of partners across multiple areas, ensuring complete support at every stage of the move.',
+      story_simone_p2: 'She is dedicated to advising companies and families in planning and their transition to the United States, offering structured, secure, and highly personalized solutions. Simone coordinates a qualified network of partners across multiple areas, ensuring complete support at every stage of the move.',
       story_simone_p3: 'Licensed in the financial field and in the Florida real estate market, she integrates her technical knowledge into the <em>one stop shop</em> concept through <em>Concierge Service USA</em>, centralizing and simplifying her clients\' journey with efficiency, professionalism, and excellence.',
       testimonials_title: 'What they say about us',
       testimonial_1: '"Concierge Service USA transformed our move to the US into a smooth and safe experience. From the visa to school enrollment, every step was closely monitored."',
@@ -158,7 +158,27 @@ document.addEventListener('DOMContentLoaded', () => {
     // Update buttons
     langBtns.forEach(btn => {
       btn.classList.toggle('active', btn.dataset.lang === lang);
+    
+  /* ==========================================
+     MOBILE MENU TOGGLE
+     ========================================== */
+  const mobileBtn = document.querySelector('.mobile-menu-btn');
+  const mainNav = document.querySelector('.main-nav');
+  if (mobileBtn && mainNav) {
+    mobileBtn.addEventListener('click', () => {
+      mainNav.classList.toggle('active');
     });
+    
+    // Close menu when a link is clicked
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mainNav.classList.remove('active');
+      });
+    });
+  }
+
+});
 
     // Update texts in DOM
     document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -220,8 +240,14 @@ document.addEventListener('DOMContentLoaded', () => {
               'Mapeamento da Regi\u00e3o Escolar',
               'Consultoria para Escolha da Escola',
               'Vis\u00e3o Geral do K-12 com Foco nos Ciclos Escolares',
-              'Prepara\u00e7\u00e3o para Aplica\u00e7\u00e3o \u00e0s Universidades Americanas',
-              'Consultoria Durante os 4 Anos do High School',
+              'Prepara\u00e7\u00e3o para Aplica\u00e7\u00e3o \u00e0s Universidades Americanas'
+            ]
+          },
+          {
+            header: 'Financeiro:',
+            items: [
+              'Prote\u00e7\u00e3o Familiar',
+              'Aposentadoria Suplementar'
             ]
           }
         ],
@@ -239,8 +265,8 @@ document.addEventListener('DOMContentLoaded', () => {
         ]
       },
       quote: {
-        pt: '\u201cA educa\u00e7\u00e3o \u00e9 o alicerce de toda adapta\u00e7\u00e3o bem-sucedida em um novo pa\u00eds...\u201d',
-        en: '"Education is the foundation of any successful adaptation in a new country..."'
+        pt: '“Toda família merece um bom planejamento educacional e financeiro para ter sucesso em um novo país.”',
+        en: '"Helping families with academic and financial planning is essential for a successful and secure adaptation in a new country..."'
       }
     },
     simone: {
@@ -250,16 +276,16 @@ document.addEventListener('DOMContentLoaded', () => {
       initials: 'SM',
       specialties: {
         pt: [
-          'Planejamento Pr\u00e9-Imigrat\u00f3rio',
+          'Gestão de Escritório de Advocacia para Vistos Imigratórios: Vistos de família, Green Card e Vistos de Trabalho.',
+          'Gerenciamento de negócios nos Estados Unidos.',
           {
-            header: 'Vistos de Imigra\u00e7\u00e3o:',
+            header: 'Documentação:',
             items: [
-              'Vistos Permanentes (Green Card)',
-              'Vistos de Trabalho',
-              'Vistos de Fam\u00edlia',
-              'Cidadania Americana',
+              'Cartório: Procurações, Certidões, Traduções certificadas, notarização de documentos',
+              'Proteção familiar: Guardianship, Will, Planejamento Sucessório.'
             ]
-          }
+          },
+          'Planejamento Familiar Pré-Imigratório - Mudança da família'
         ],
         en: [
           'Pre-Immigration Planning',
@@ -275,8 +301,8 @@ document.addEventListener('DOMContentLoaded', () => {
         ]
       },
       quote: {
-        pt: '\u201cCada fam\u00edlia merece um processo migrat\u00f3rio seguro e acolhedor...\u201d',
-        en: '"Every family deserves a safe and welcoming immigration process..."'
+        pt: '“O planejamento pré imigratório é o alicerce fundamental para a mudança em um novo país…”',
+        en: '"Centralizing and simplifying our clients\' journey with efficiency, professionalism, and excellence for a secure move to the US."'
       }
     },
     andrea: {
@@ -391,4 +417,23 @@ document.addEventListener('DOMContentLoaded', () => {
       card.style.transition = 'var(--transition-base)';
     });
   });
+
+  /* ==========================================
+     MOBILE MENU TOGGLE
+     ========================================== */
+  const mobileBtn = document.querySelector('.mobile-menu-btn');
+  const mainNav = document.querySelector('.main-nav');
+  if (mobileBtn && mainNav) {
+    mobileBtn.addEventListener('click', () => {
+      mainNav.classList.toggle('active');
+    });
+    
+    // Close menu when a link is clicked
+    const navLinks = document.querySelectorAll('.nav-link');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mainNav.classList.remove('active');
+      });
+    });
+  }
 });

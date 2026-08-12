@@ -28,11 +28,19 @@
 
       <nav class="main-nav" aria-label="Navegação principal">
         <a href="#inicio" class="nav-link">Início</a>
+        <a href="quem-somos.html" class="nav-link">Quem somos</a>
         <a href="#equipe" class="nav-link">Nossos serviços</a>
         <a href="outros-servicos.html" class="nav-link">Outros serviços</a>
         <a href="guide.html" class="nav-link">Guia do concierge</a>
       </nav>
 
+      <button class="mobile-menu-btn" aria-label="Abrir menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
       <div class="lang-switch">
         <button class="lang-btn active" data-lang="pt">PT</button>
         <span class="lang-divider">|</span>
@@ -104,7 +112,7 @@
             <div class="hero-badge-text">
               <strong data-i18n="hero_badge_title">Uma equipe, três especialidades</strong>
               <span data-i18n="hero_badge_subtitle">Uma Equipe, One Stop Shop: Imigração, mudança, organizer, mercado
-                imobiliário, financias e internacionalização de negócios em um só lugar!</span>
+                imobiliário, finanças, educação e internacionalização de negócios em um só lugar!</span>
             </div>
           </div>
         </div>
@@ -222,20 +230,20 @@
             <div class="team-member active" data-member="andrea" id="member-andrea">
               <div class="member-photo"><img src="image/Andrea.jpg" alt="Andrea Porto" loading="lazy"></div>
               <h4>Andrea Porto</h4>
-              <span class="role" data-i18n="role_andrea">Personal Organizer</span>
-              <a href="quem-somos.html#historia" class="team-read-more" data-i18n="team_read_more">Leia mais</a>
+              <span class="role" data-i18n="role_andrea">Interior Designer</span>
+              <a href="quem-somos.html#andrea" class="team-read-more" data-i18n="team_read_more">Leia mais</a>
             </div>
             <div class="team-member" data-member="monica" id="member-monica">
               <div class="member-photo"><img src="image/Monica.jpg" alt="Monica Gasparetto" loading="lazy"></div>
               <h4>Monica Gasparetto</h4>
-              <span class="role" data-i18n="role_monica">Consultora Educacional</span>
-              <a href="quem-somos.html#historia" class="team-read-more" data-i18n="team_read_more">Leia mais</a>
+              <span class="role" data-i18n="role_monica">Consultora Educacional e Financeira</span>
+              <a href="quem-somos.html#monica" class="team-read-more" data-i18n="team_read_more">Leia mais</a>
             </div>
             <div class="team-member" data-member="simone" id="member-simone">
               <div class="member-photo"><img src="image/Simone.jpg" alt="Simone Muraro" loading="lazy"></div>
               <h4>Simone Muraro</h4>
-              <span class="role" data-i18n="role_simone">Especialista Imigratória</span>
-              <a href="quem-somos.html#historia" class="team-read-more" data-i18n="team_read_more">Leia mais</a>
+              <span class="role" data-i18n="role_simone">Mobilidade Internacional</span>
+              <a href="quem-somos.html#simone" class="team-read-more" data-i18n="team_read_more">Leia mais</a>
             </div>
           </div>
           <div class="team-detail reveal" id="team-detail">
@@ -363,6 +371,36 @@
               foi conduzido com carinho, atenção e profissionalismo."</p>
             <div class="stars" aria-label="5 estrelas">★★★★★</div>
           </div>
+        </div>
+
+        <div class="review-form-container reveal">
+          <h3 data-i18n="review_form_title">Deixe sua avaliação</h3>
+          <form id="review-form" class="review-form">
+            <div class="form-group">
+              <label for="review-name" data-i18n="review_label_name">Nome</label>
+              <input type="text" id="review-name" required placeholder="Seu nome" />
+            </div>
+            <div class="form-group">
+              <label data-i18n="review_label_rating">Avaliação (Estrelas)</label>
+              <div class="star-rating">
+                <input type="radio" id="star5" name="rating" value="5" required />
+                <input type="radio" id="star4" name="rating" value="4" />
+                <input type="radio" id="star3" name="rating" value="3" />
+                <input type="radio" id="star2" name="rating" value="2" />
+                <input type="radio" id="star1" name="rating" value="1" />
+                <label for="star5" title="5 estrelas">★</label>
+                <label for="star4" title="4 estrelas">★</label>
+                <label for="star3" title="3 estrelas">★</label>
+                <label for="star2" title="2 estrelas">★</label>
+                <label for="star1" title="1 estrela">★</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="review-text" data-i18n="review_label_text">Sua experiência</label>
+              <textarea id="review-text" rows="4" required placeholder="Escreva sua avaliação aqui..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary" data-i18n="btn_submit_review">Enviar Avaliação</button>
+          </form>
         </div>
       </div>
     </section>
@@ -587,7 +625,7 @@
             <li><a href="#servicos">Imigração</a></li>
             <li><a href="#servicos">Home Identity</a></li>
             <li><a href="#servicos">Personal Organizer</a></li>
-            <li><a href="guide.html">Guia da Concierge</a></li>
+            <li><a href="guide.html">Guia do Concierge</a></li>
           </ul>
         </div>
 
@@ -598,7 +636,7 @@
             <li><a href="quem-somos.html">Quem Somos</a></li>
             <li><a href="#equipe">Saiba com quem contar</a></li>
             <li><a href="outros-servicos.html">Outros Serviços</a></li>
-            <li><a href="guide.html">Guia da Concierge</a></li>
+            <li><a href="guide.html">Guia do Concierge</a></li>
             <li><a href="#servicos">Nossos Serviços</a></li>
             <li><a href="#publicacoes">Publicações</a></li>
           </ul>
@@ -635,8 +673,7 @@
           </div>
 
           <div class="social-links">
-            <a href="https://www.instagram.com/conciergeserviceusa?igsh=ZzFvaXZ5OGR4c2s4" class="social-link"
-              aria-label="Instagram" title="Instagram">
+            <a href="https://www.instagram.com/conciergeserviceusa?igsh=ZzFvaXZ5OGR4c2s4" class="social-link" aria-label="Instagram" target="_blank" title="Instagram">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
@@ -644,22 +681,19 @@
                 <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none" />
               </svg>
             </a>
-            <a href="https://www.facebook.com/profile.php?id=61566010590338&mibextid=wwXIfr&rdid=JvjIIKoU09UHDtzt&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1ZEid6Zvwt%2F%3Fmibextid%3DwwXIfr#"
-              class="social-link" aria-label="Facebook" title="Facebook">
+            <a href="https://www.facebook.com/profile.php?id=61566010590338" class="social-link" aria-label="Facebook" target="_blank" title="Facebook">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
               </svg>
             </a>
-            <a href="https://www.linkedin.com/company/conciergeserviceusaa/" class="social-link" aria-label="LinkedIn"
-              title="LinkedIn">
+            <a href="https://www.linkedin.com/company/conciergeserviceusaa/" class="social-link" aria-label="LinkedIn" target="_blank" title="LinkedIn">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
                 <rect x="2" y="9" width="4" height="12" />
                 <circle cx="4" cy="4" r="2" />
               </svg>
             </a>
-            <a href="https://www.youtube.com/@conciergeserviceusa" class="social-link" aria-label="YouTube"
-              title="YouTube">
+            <a href="https://www.youtube.com/@conciergeserviceusa" class="social-link" aria-label="YouTube" target="_blank" title="YouTube">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                 <path
                   d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" />

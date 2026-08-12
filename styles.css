@@ -410,7 +410,7 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top center;
+  object-position: center 2%;
 }
 
 .hero-media-frame::after {
@@ -449,7 +449,7 @@ button {
   height: 56px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: top center;
+  object-position: center 15%;
   border: 3px solid var(--color-bg-white);
   box-shadow: var(--shadow-sm);
 }
@@ -825,6 +825,7 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 15%;
 }
 
 .team-member h4 {
@@ -983,6 +984,7 @@ button {
   width: 100%;
   height: 400px;
   object-fit: cover;
+  object-position: center 15%;
   display: block;
 }
 
@@ -1683,4 +1685,147 @@ button {
 
 .detail-photo .placeholder-avatar {
   font-size: 2.5rem;
+}
+
+/* ==========================================
+   REVIEW FORM
+   ========================================== */
+.review-form-container {
+  max-width: 600px;
+  margin: 3rem auto 0;
+  background: var(--color-bg-light);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.review-form-container h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-text-dark);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 2px rgba(196, 163, 90, 0.2);
+}
+
+/* Star Rating CSS */
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 0.15rem;
+  align-items: center;
+}
+
+.star-rating input {
+  /* Visually hidden but accessible */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.star-rating label {
+  cursor: pointer;
+  font-size: 2rem;
+  color: #ccc;
+  transition: color 0.2s ease;
+  line-height: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input:checked ~ label {
+  color: var(--color-gold, #C4A35A);
+}
+
+.mobile-menu-btn {
+  display: none;
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-btn {
+    display: block;
+    z-index: 100;
+  }
+  
+  .main-nav {
+    display: flex !important;
+    position: fixed;
+    top: 0;
+    right: -280px;
+    width: 280px;
+    height: 100vh;
+    background: #490038;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 6rem 2rem 2rem;
+    transition: right 0.35s ease;
+    z-index: 90;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.5);
+    gap: 1.5rem;
+  }
+
+  .main-nav.active {
+    right: 0;
+  }
+
+  .nav-link {
+    font-size: 1.15rem;
+    padding: 0.5rem 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-radius: 0;
+  }
+}
+
+.hero-badge-avatars img[src*="Andrea"] {
+  transform: scale(1.15);
+  object-position: center top;
 }
